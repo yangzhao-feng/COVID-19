@@ -1,0 +1,4 @@
+com\yang\user\impl\UserInfoServiceImpl.class
+com\yang\user\impl\UserRiskServiceImpl.class
+com\yang\user\impl\UserLoginServiceImpl.class
+com\yang\user\impl\listener\UsertripDataListener.class

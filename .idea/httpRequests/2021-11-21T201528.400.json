@@ -1,0 +1,7 @@
+{
+  "timestamp": "2021-11-21T12:15:28.587+0000",
+  "status": 400,
+  "error": "Bad Request",
+  "message": "Required String parameter 'city' is not present",
+  "path": "/adminInfo/riskCheckInfo"
+}

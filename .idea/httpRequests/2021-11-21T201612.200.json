@@ -1,0 +1,350 @@
+{
+  "status": 200,
+  "msg": "OK",
+  "data": [
+    {
+      "address": "江苏省镇江市丹徒区石马南路95号",
+      "riskCheckPatientBOList": [
+        {
+          "realname": "王四",
+          "idNumber": "442000200102042977",
+          "health": 1,
+          "starttime": "2021年12月06日 07:00:00",
+          "stoptime": "2021年12月06日 07:00:00",
+          "place": "江苏省镇江市丹徒区石马南路95号",
+          "unit": "江苏省镇江市中医院",
+          "timeIndex": 0
+        },
+        {
+          "realname": "王五",
+          "idNumber": "442000200102042961",
+          "health": 1,
+          "starttime": "2021年12月04日 07:00:00",
+          "stoptime": "2021年12月04日 07:00:00",
+          "place": "江苏省镇江市丹徒区石马南路95号",
+          "unit": "江苏省镇江市中医院",
+          "timeIndex": 1
+        },
+        {
+          "realname": "张三",
+          "idNumber": "442000200102042958",
+          "health": 1,
+          "starttime": "2021年12月02日 07:00:00",
+          "stoptime": "2021年12月02日 07:00:00",
+          "place": "江苏省镇江市丹徒区石马南路95号",
+          "unit": "江苏省镇江市中医院",
+          "timeIndex": 2
+        },
+        {
+          "realname": "杨照锋",
+          "idNumber": "442000200102042958",
+          "health": 1,
+          "starttime": "2021年11月12日 07:00:00",
+          "stoptime": "2021年12月01日 07:00:00",
+          "place": "江苏省镇江市丹徒区石马南路95号",
+          "unit": "江苏省镇江市中医院",
+          "timeIndex": 3
+        }
+      ],
+      "riskCheckUserTripBOList": [],
+      "isRiskArea": false,
+      "patientNumber": 4,
+      "lng": "119.34263579561184",
+      "lat": "32.121307087640645",
+      "userTripNumber": 0
+    },
+    {
+      "address": "江苏省镇江市丹徒区X316(长香路)",
+      "riskCheckPatientBOList": [
+        {
+          "realname": "李留",
+          "idNumber": "442000200102042944",
+          "health": 1,
+          "starttime": "2021年12月05日 07:00:00",
+          "stoptime": "2021年12月05日 07:00:00",
+          "place": "江苏省镇江市丹徒区X316(长香路)",
+          "unit": "江苏省镇江市中医院",
+          "timeIndex": 0
+        },
+        {
+          "realname": "李四",
+          "idNumber": "442000200102042959",
+          "health": 1,
+          "starttime": "2021年12月03日 07:00:00",
+          "stoptime": "2021年12月03日 07:00:00",
+          "place": "江苏省镇江市丹徒区X316(长香路)",
+          "unit": "江苏省镇江市中医院",
+          "timeIndex": 1
+        }
+      ],
+      "riskCheckUserTripBOList": [],
+      "isRiskArea": false,
+      "patientNumber": 2,
+      "lng": "119.36743585480912",
+      "lat": "32.12401610807021",
+      "userTripNumber": 0
+    },
+    {
+      "address": "江苏省镇江市丹徒区上党镇仙人度假区一号(仙人湖北侧)",
+      "riskCheckPatientBOList": [
+        {
+          "realname": "彭三",
+          "idNumber": "442000200102042989",
+          "health": 1,
+          "starttime": "2021年12月07日 07:00:00",
+          "stoptime": "2021年12月07日 07:00:00",
+          "place": "江苏省镇江市丹徒区上党镇仙人度假区一号(仙人湖北侧)",
+          "unit": "江苏省镇江市中医院",
+          "timeIndex": 0
+        }
+      ],
+      "riskCheckUserTripBOList": [],
+      "isRiskArea": false,
+      "patientNumber": 1,
+      "lng": "119.38075305433344",
+      "lat": "32.07681831068885",
+      "userTripNumber": 0
+    },
+    {
+      "address": "江苏省镇江市句容市东昌路东",
+      "riskCheckPatientBOList": [
+        {
+          "realname": "沈李",
+          "idNumber": "442000200102042966",
+          "health": 1,
+          "starttime": "2021年12月08日 07:00:00",
+          "stoptime": "2021年12月08日 07:00:00",
+          "place": "江苏省镇江市句容市东昌路东",
+          "unit": "江苏省镇江市中医院",
+          "timeIndex": 0
+        }
+      ],
+      "riskCheckUserTripBOList": [],
+      "isRiskArea": false,
+      "patientNumber": 1,
+      "lng": "119.31201148281009",
+      "lat": "32.06311638124143",
+      "userTripNumber": 0
+    },
+    {
+      "address": "江苏省镇江市句容市S243光明中小企业创业园南侧约250米",
+      "riskCheckPatientBOList": [
+        {
+          "realname": "侯九",
+          "idNumber": "442000200102042953",
+          "health": 1,
+          "starttime": "2021年12月09日 07:00:00",
+          "stoptime": "2021年12月09日 07:00:00",
+          "place": "江苏省镇江市句容市S243光明中小企业创业园南侧约250米",
+          "unit": "江苏省镇江市中医院",
+          "timeIndex": 0
+        }
+      ],
+      "riskCheckUserTripBOList": [],
+      "isRiskArea": false,
+      "patientNumber": 1,
+      "lng": "119.29635590421275",
+      "lat": "32.055965115612935",
+      "userTripNumber": 0
+    },
+    {
+      "address": "江苏省镇江市丹徒区官庄路与元章路交叉路口往东南约60米",
+      "riskCheckPatientBOList": [
+        {
+          "realname": "王十",
+          "idNumber": "442000200102042920",
+          "health": 1,
+          "starttime": "2021年12月10日 07:00:00",
+          "stoptime": "2021年12月10日 07:00:00",
+          "place": "江苏省镇江市丹徒区官庄路与元章路交叉路口往东南约60米",
+          "unit": "江苏省镇江市中医院",
+          "timeIndex": 0
+        }
+      ],
+      "riskCheckUserTripBOList": [],
+      "isRiskArea": false,
+      "patientNumber": 1,
+      "lng": "119.41749383952208",
+      "lat": "32.13262633185298",
+      "userTripNumber": 0
+    },
+    {
+      "address": "江苏省镇江市丹徒区茅以升路与驸马街交叉路口往东约170米",
+      "riskCheckPatientBOList": [
+        {
+          "realname": "杨八",
+          "idNumber": "442000200102042931",
+          "health": 1,
+          "starttime": "2021年12月13日 07:00:00",
+          "stoptime": "2021年12月13日 07:00:00",
+          "place": "江苏省镇江市丹徒区茅以升路与驸马街交叉路口往东约170米",
+          "unit": "江苏省镇江市中医院",
+          "timeIndex": 0
+        },
+        {
+          "realname": "杨三",
+          "idNumber": "442000200102042934",
+          "health": 1,
+          "starttime": "2021年12月11日 07:00:00",
+          "stoptime": "2021年12月11日 07:00:00",
+          "place": "江苏省镇江市丹徒区茅以升路与驸马街交叉路口往东约170米",
+          "unit": "江苏省镇江市中医院",
+          "timeIndex": 1
+        }
+      ],
+      "riskCheckUserTripBOList": [],
+      "isRiskArea": false,
+      "patientNumber": 2,
+      "lng": "119.4190550423967",
+      "lat": "32.14003742660789",
+      "userTripNumber": 0
+    },
+    {
+      "address": "江苏省镇江市丹徒区谷阳大道199号",
+      "riskCheckPatientBOList": [
+        {
+          "realname": "杨七",
+          "idNumber": "442000200102042980",
+          "health": 1,
+          "starttime": "2021年12月12日 07:00:00",
+          "stoptime": "2021年12月12日 07:00:00",
+          "place": "江苏省镇江市丹徒区谷阳大道199号",
+          "unit": "江苏省镇江市中医院",
+          "timeIndex": 0
+        }
+      ],
+      "riskCheckUserTripBOList": [],
+      "isRiskArea": false,
+      "patientNumber": 1,
+      "lng": "119.42819939543725",
+      "lat": "32.13216255714585",
+      "userTripNumber": 0
+    },
+    {
+      "address": "江苏省镇江市润州区凤凰家园",
+      "riskCheckPatientBOList": [
+        {
+          "realname": "杨过",
+          "idNumber": "442000200102042986",
+          "health": 1,
+          "starttime": "2021年12月14日 07:00:00",
+          "stoptime": "2021年12月14日 07:00:00",
+          "place": "江苏省镇江市润州区凤凰家园",
+          "unit": "江苏省镇江市中医院",
+          "timeIndex": 0
+        }
+      ],
+      "riskCheckUserTripBOList": [],
+      "isRiskArea": false,
+      "patientNumber": 1,
+      "lng": "119.41522139607349",
+      "lat": "32.177353763714514",
+      "userTripNumber": 0
+    },
+    {
+      "address": "江苏省镇江市丹徒区高资街道312国道镇江建科科技园",
+      "riskCheckPatientBOList": [
+        {
+          "realname": "沈五",
+          "idNumber": "442000200102042973",
+          "health": 1,
+          "starttime": "2021年12月15日 07:00:00",
+          "stoptime": "2021年12月15日 07:00:00",
+          "place": "江苏省镇江市丹徒区高资街道312国道镇江建科科技园",
+          "unit": "江苏省镇江市中医院",
+          "timeIndex": 0
+        }
+      ],
+      "riskCheckUserTripBOList": [],
+      "isRiskArea": false,
+      "patientNumber": 1,
+      "lng": "119.33222982458426",
+      "lat": "32.15845505996236",
+      "userTripNumber": 0
+    },
+    {
+      "address": "江苏省镇江市丹徒区梓里路1号",
+      "riskCheckPatientBOList": [
+        {
+          "realname": "孙七",
+          "idNumber": "442000200102042929",
+          "health": 1,
+          "starttime": "2021年12月16日 07:00:00",
+          "stoptime": "2021年12月16日 07:00:00",
+          "place": "江苏省镇江市丹徒区梓里路1号",
+          "unit": "江苏省镇江市中医院",
+          "timeIndex": 0
+        }
+      ],
+      "riskCheckUserTripBOList": [],
+      "isRiskArea": false,
+      "patientNumber": 1,
+      "lng": "119.31485246381595",
+      "lat": "32.16629657006286",
+      "userTripNumber": 0
+    },
+    {
+      "address": "江苏省镇江市丹徒区四丰路",
+      "riskCheckPatientBOList": [
+        {
+          "realname": "刘八",
+          "idNumber": "442000200102042937",
+          "health": 1,
+          "starttime": "2021年12月17日 07:00:00",
+          "stoptime": "2021年12月17日 07:00:00",
+          "place": "江苏省镇江市丹徒区四丰路",
+          "unit": "江苏省镇江市中医院",
+          "timeIndex": 0
+        }
+      ],
+      "riskCheckUserTripBOList": [],
+      "isRiskArea": false,
+      "patientNumber": 1,
+      "lng": "119.32895038065898",
+      "lat": "32.127131897191404",
+      "userTripNumber": 0
+    },
+    {
+      "address": "江苏省镇江市丹徒新区长晖路666号",
+      "riskCheckPatientBOList": [
+        {
+          "realname": "张四",
+          "idNumber": "442000200102042941",
+          "health": 1,
+          "starttime": "2021年12月18日 07:00:00",
+          "stoptime": "2021年12月18日 07:00:00",
+          "place": "江苏省镇江市丹徒新区长晖路666号",
+          "unit": "江苏省镇江市中医院",
+          "timeIndex": 0
+        }
+      ],
+      "riskCheckUserTripBOList": [],
+      "isRiskArea": false,
+      "patientNumber": 1,
+      "lng": "119.37323801009806",
+      "lat": "32.11474103628417",
+      "userTripNumber": 0
+    },
+    {
+      "address": "江苏省镇江市句容市下蜀镇桥头镇",
+      "riskCheckPatientBOList": [
+        {
+          "realname": "彭七",
+          "idNumber": "442000200102042900",
+          "health": 1,
+          "starttime": "2021年12月19日 07:00:00",
+          "stoptime": "2021年12月19日 07:00:00",
+          "place": "江苏省镇江市句容市下蜀镇桥头镇",
+          "unit": "江苏省镇江市中医院",
+          "timeIndex": 0
+        }
+      ],
+      "riskCheckUserTripBOList": [],
+      "isRiskArea": false,
+      "patientNumber": 1,
+      "lng": "119.19758433881303",
+      "lat": "32.17521236014788",
+      "userTripNumber": 0
+    }
+  ]
+}

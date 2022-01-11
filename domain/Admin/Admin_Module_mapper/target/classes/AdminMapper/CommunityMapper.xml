@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yang.admin.mapper.CommunityMapper" >
+  <resultMap id="BaseResultMap" type="com.yang.pojo.VO.Community" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="place" property="place" jdbcType="VARCHAR" />
+    <result column="risk_level" property="riskLevel" jdbcType="INTEGER" />
+    <result column="Unit" property="unit" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

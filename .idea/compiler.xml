@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Admin_Module_api" />
+        <module name="Home_Module_Mapper" />
+        <module name="COVID-19_common" />
+        <module name="test" />
+        <module name="Admin_Module_mapper" />
+        <module name="Home_Module" />
+        <module name="User_Module_service" />
+        <module name="Admin_Module_pojo" />
+        <module name="Home_Module_Pojo" />
+        <module name="Home_Module_Api" />
+        <module name="Home_Module_Service" />
+        <module name="User_Module" />
+        <module name="COVID-19-shared-pojo" />
+        <module name="User_Module_mapper" />
+        <module name="Admin_Module_service" />
+        <module name="Admin_Module" />
+        <module name="User_Module_pojo" />
+        <module name="Eureka_server" />
+        <module name="User_Module_api" />
+        <module name="COVID-19_components" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Admin_Module" target="8" />
+      <module name="Admin_Module_api" target="8" />
+      <module name="Admin_Module_mapper" target="8" />
+      <module name="Admin_Module_pojo" target="8" />
+      <module name="Admin_Module_service" target="8" />
+      <module name="COVID-19" target="8" />
+      <module name="COVID-19-shared-pojo" target="8" />
+      <module name="COVID-19_common" target="8" />
+      <module name="COVID-19_components" target="8" />
+      <module name="Eureka_server" target="8" />
+      <module name="Home" target="8" />
+      <module name="Home_Module" target="8" />
+      <module name="Home_Module_Api" target="8" />
+      <module name="Home_Module_api" target="8" />
+      <module name="Home_Module_Mapper" target="8" />
+      <module name="Home_Module_Pojo" target="8" />
+      <module name="Home_Module_pojo" target="8" />
+      <module name="Home_Module_Service" target="8" />
+      <module name="Home_Module_service" target="8" />
+      <module name="test" target="8" />
+      <module name="User_Module" target="8" />
+      <module name="User_Module_api" target="8" />
+      <module name="User_Module_mapper" target="8" />
+      <module name="User_Module_pojo" target="8" />
+      <module name="User_Module_service" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

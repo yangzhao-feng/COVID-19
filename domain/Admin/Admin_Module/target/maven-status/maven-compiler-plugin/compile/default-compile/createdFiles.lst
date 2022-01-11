@@ -1,0 +1,4 @@
+com\yang\admin\AdminSpringApplication.class
+com\yang\admin\Controller\AdminCommunityController.class
+com\yang\admin\Controller\AdminInfoController.class
+com\yang\admin\Controller\AdminBorderController.class

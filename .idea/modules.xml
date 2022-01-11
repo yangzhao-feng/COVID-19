@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/domain/Admin/Admin_Module/Admin_Module.iml" filepath="$PROJECT_DIR$/domain/Admin/Admin_Module/Admin_Module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/domain/Admin/Admin_Module_api/Admin_Module_api.iml" filepath="$PROJECT_DIR$/domain/Admin/Admin_Module_api/Admin_Module_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/domain/Admin/Admin_Module_mapper/Admin_Module_mapper.iml" filepath="$PROJECT_DIR$/domain/Admin/Admin_Module_mapper/Admin_Module_mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/domain/Admin/Admin_Module_pojo/Admin_Module_pojo.iml" filepath="$PROJECT_DIR$/domain/Admin/Admin_Module_pojo/Admin_Module_pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/domain/Admin/Admin_Module_service/Admin_Module_service.iml" filepath="$PROJECT_DIR$/domain/Admin/Admin_Module_service/Admin_Module_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/COVID-19.iml" filepath="$PROJECT_DIR$/COVID-19.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/COVID-19-shared-pojo/COVID-19-shared-pojo.iml" filepath="$PROJECT_DIR$/common/COVID-19-shared-pojo/COVID-19-shared-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/COVID-19_common/COVID-19_common.iml" filepath="$PROJECT_DIR$/common/COVID-19_common/COVID-19_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/COVID-19_components/COVID-19_components.iml" filepath="$PROJECT_DIR$/common/COVID-19_components/COVID-19_components.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform/Eureka_server/Eureka_server.iml" filepath="$PROJECT_DIR$/platform/Eureka_server/Eureka_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/domain/Home/Home_Module/Home_Module.iml" filepath="$PROJECT_DIR$/domain/Home/Home_Module/Home_Module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/domain/Home/Home_Module_Api/domain/Home/Home_Module_Api.iml" filepath="$PROJECT_DIR$/domain/Home/Home_Module_Api/domain/Home/Home_Module_Api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/domain/Home/Home_Module_Mapper/domain/Home/Home_Module_Mapper.iml" filepath="$PROJECT_DIR$/domain/Home/Home_Module_Mapper/domain/Home/Home_Module_Mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/domain/Home/Home_Module_Pojo/domain/Home/Home_Module_Pojo.iml" filepath="$PROJECT_DIR$/domain/Home/Home_Module_Pojo/domain/Home/Home_Module_Pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/domain/Home/Home_Module_Service/domain/Home/Home_Module_Service.iml" filepath="$PROJECT_DIR$/domain/Home/Home_Module_Service/domain/Home/Home_Module_Service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/domain/User/User_Module/User_Module.iml" filepath="$PROJECT_DIR$/domain/User/User_Module/User_Module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/domain/User/User_Module_api/User_Module_api.iml" filepath="$PROJECT_DIR$/domain/User/User_Module_api/User_Module_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/domain/User/User_Module_mapper/User_Module_mapper.iml" filepath="$PROJECT_DIR$/domain/User/User_Module_mapper/User_Module_mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/domain/User/User_Module_pojo/User_Module_pojo.iml" filepath="$PROJECT_DIR$/domain/User/User_Module_pojo/User_Module_pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/domain/User/User_Module_service/User_Module_service.iml" filepath="$PROJECT_DIR$/domain/User/User_Module_service/User_Module_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
+    </modules>
+  </component>
+</project>

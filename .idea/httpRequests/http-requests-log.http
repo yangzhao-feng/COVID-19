@@ -1,0 +1,108 @@
+GET http://101.35.156.227:20002/home/HomeInfo
+
+###
+
+GET http://101.35.156.227:20001/userInfo/tripInfo?username=yang
+
+###
+
+GET http://101.35.156.227:20001/userInfo/tripInfo?username=yang
+
+###
+
+GET http://localhost:20001/userInfo/tripInfo?username=yang
+
+<> 2022-01-06T114305.200.json
+
+###
+
+GET http://101.35.156.227:20003/adminInfo/patientNumber
+
+<> 2022-01-06T111325.200.json
+
+###
+
+GET http://101.35.156.227:20001/userInfo/tripInfo?username=yang
+
+###
+
+GET http://101.35.156.227:20001/userInfo/tripInfo?username=yang
+
+###
+
+GET http://101.35.156.227:20003/adminInfo/patientNumber
+
+<> 2022-01-06T105836.200.json
+
+###
+
+GET http://101.35.156.227:20003/userInfo/tripInfo
+
+<> 2022-01-06T105827.404.json
+
+###
+
+GET http://localhost:20001/userInfo/tripInfo
+
+###
+
+GET http://101.35.156.227:20001/userInfo/tripInfo
+
+###
+
+GET http://101.35.156.227:20003/adminInfo/patientNumber
+
+<> 2022-01-06T105617.200.json
+
+###
+
+GET http://101.35.156.227:20002/home/CityInfo
+
+###
+
+GET http://localhost:20002/home/AllConfirm
+
+<> 2022-01-06T105022.200.json
+
+###
+
+GET http://101.35.156.227:20002/home/AllConfirm
+
+###
+
+GET http://localhost:20003/community/ComInfoByAdd2?address=镇江
+
+<> 2021-12-29T121558.200.json
+
+###
+
+GET http://localhost:20003/community/ComInfoByAdd2
+
+<> 2021-12-29T121418.400.json
+
+###
+
+GET http://localhost:20003/adminInfo/riskCheckInfo?city=镇江&username=yang
+
+<> 2021-11-21T201612.200.json
+
+###
+
+GET http://localhost:20003/adminInfo/riskCheckInfo？city=镇江&username=yang
+
+<> 2021-11-21T201602.404.json
+
+###
+
+GET http://localhost:20003/adminInfo/riskCheckInfo
+
+<> 2021-11-21T201528.400.json
+
+###
+
+GET http://localhost:20003/adminInfo/riskCheckInfo
+
+<> 2021-11-21T201522.400.json
+
+###
+

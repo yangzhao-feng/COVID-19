@@ -1,0 +1,7 @@
+{
+  "timestamp": "2021-12-29T04:14:18.894+0000",
+  "status": 400,
+  "error": "Bad Request",
+  "message": "Required String parameter 'address' is not present",
+  "path": "/community/ComInfoByAdd2"
+}

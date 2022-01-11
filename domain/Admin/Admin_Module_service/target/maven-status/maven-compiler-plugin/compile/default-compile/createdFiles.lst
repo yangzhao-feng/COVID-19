@@ -1,0 +1,7 @@
+com\yang\admin\BorderInfoServiceImpl.class
+com\yang\admin\listener\BorderDataListener.class
+com\yang\admin\listener\CommunityDataListener.class
+com\yang\admin\BaseService.class
+com\yang\admin\CommunityServiceImpl.class
+com\yang\admin\listener\PatientsDataListener.class
+com\yang\admin\PerInfoServiceImpl.class

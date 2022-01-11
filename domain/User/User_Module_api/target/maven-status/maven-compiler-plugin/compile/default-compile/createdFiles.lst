@@ -1,0 +1,3 @@
+com\yang\user\impl\UserLoginService.class
+com\yang\user\impl\UserInfoService.class
+com\yang\user\impl\UserRiskService.class

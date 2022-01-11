@@ -1,0 +1,9 @@
+{
+  "status": 200,
+  "msg": "OK",
+  "data": {
+    "confirm": 18,
+    "cure": 0,
+    "dead": 0
+  }
+}

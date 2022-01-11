@@ -1,0 +1,77 @@
+2022-01-11 11:33:46.950  INFO 9820 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2022-01-11 11:33:49.293  INFO 9820 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-01-11 11:33:49.293  WARN 9820 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/admin-service/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2022-01-11 11:33:49.293  INFO 9820 --- [main] com.yang.admin.AdminSpringApplication    : No active profile set, falling back to default profiles: default
+2022-01-11 11:33:53.050  INFO 9820 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-11 11:33:53.063  INFO 9820 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-01-11 11:33:53.230  INFO 9820 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109ms. Found 0 repository interfaces.
+2022-01-11 11:33:53.572  WARN 9820 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-01-11 11:33:53.984  WARN 9820 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.yang.admin]' package. Please check your configuration.
+2022-01-11 11:33:54.255  INFO 9820 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=756e4434-efb7-3078-a8f4-5fb21a81f6e7
+2022-01-11 11:33:54.564  INFO 9820 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2f9cabdc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-11 11:33:54.650  INFO 9820 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4bb6aed9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-11 11:33:55.263  INFO 9820 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 20003 (http)
+2022-01-11 11:33:55.320  INFO 9820 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-11 11:33:55.321  INFO 9820 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2022-01-11 11:33:55.330  INFO 9820 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
+2022-01-11 11:33:55.330  INFO 9820 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-01-11 11:33:55.331  INFO 9820 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-01-11 11:33:55.336  INFO 9820 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1i  8 Dec 2020]
+2022-01-11 11:33:55.845  INFO 9820 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-11 11:33:55.846  INFO 9820 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6505 ms
+2022-01-11 11:33:56.622  WARN 9820 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-01-11 11:33:56.622  INFO 9820 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-01-11 11:33:56.654  INFO 9820 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3e05586b
+2022-01-11 11:33:59.330  INFO 9820 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-01-11 11:34:04.832  WARN 9820 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-01-11 11:34:04.832  INFO 9820 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-01-11 11:34:05.275  INFO 9820 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-11 11:34:05.434  INFO 9820 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-01-11 11:34:05.449  INFO 9820 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-01-11 11:34:05.449  INFO 9820 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-01-11 11:34:05.449  INFO 9820 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2022-01-11 11:34:08.193  INFO 9820 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-01-11 11:34:08.318  INFO 9820 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-01-11 11:34:08.568  INFO 9820 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-01-11 11:34:08.615  INFO 9820 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-01-11 11:34:09.068  INFO 9820 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-01-11 11:34:09.068  INFO 9820 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-01-11 11:34:09.240  INFO 9820 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-01-11 11:34:09.240  INFO 9820 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-01-11 11:34:09.646  INFO 9820 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-11 11:34:10.053  INFO 9820 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-01-11 11:34:10.053  INFO 9820 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-01-11 11:34:10.053  INFO 9820 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-01-11 11:34:10.053  INFO 9820 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-01-11 11:34:10.053  INFO 9820 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-01-11 11:34:10.053  INFO 9820 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-01-11 11:34:10.053  INFO 9820 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-01-11 11:34:10.683  INFO 9820 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-01-11 11:34:10.686  INFO 9820 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 5
+2022-01-11 11:34:10.691  INFO 9820 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-01-11 11:34:10.698  INFO 9820 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1641872050696 with initial instances count: 0
+2022-01-11 11:34:10.700  INFO 9820 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ADMIN-SERVICE with eureka with status UP
+2022-01-11 11:34:10.701  INFO 9820 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1641872050701, current=UP, previous=STARTING]
+2022-01-11 11:34:10.705  INFO 9820 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVICE/localhost:admin-service:20003: registering service...
+2022-01-11 11:34:10.788  INFO 9820 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 20003 (http) with context path ''
+2022-01-11 11:34:10.788  INFO 9820 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 20003
+2022-01-11 11:34:10.804  INFO 9820 --- [main] com.yang.admin.AdminSpringApplication    : Started AdminSpringApplication in 28.283 seconds (JVM running for 29.652)
+2022-01-11 11:34:10.851  INFO 9820 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVICE/localhost:admin-service:20003 - registration status: 204
+2022-01-11 11:34:11.820  INFO 9820 --- [RMI TCP Connection(10)-192.168.62.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-11 11:34:11.820  INFO 9820 --- [RMI TCP Connection(10)-192.168.62.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-11 11:34:11.835  INFO 9820 --- [RMI TCP Connection(9)-192.168.62.2] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Starting...
+2022-01-11 11:34:11.835  INFO 9820 --- [RMI TCP Connection(10)-192.168.62.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2022-01-11 11:34:12.666  INFO 9820 --- [RMI TCP Connection(9)-192.168.62.2] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Start completed.
+2022-01-11 11:34:12.812  INFO 9820 --- [RMI TCP Connection(9)-192.168.62.2] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2022-01-11 11:34:14.827  INFO 9820 --- [RMI TCP Connection(9)-192.168.62.2] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-01-11 11:34:14.828  WARN 9820 --- [RMI TCP Connection(9)-192.168.62.2] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/admin-service/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2022-01-11 11:34:15.464  INFO 9820 --- [parallel-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2022-01-11 11:34:15.464  INFO 9820 --- [parallel-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2022-01-11 11:34:40.694  INFO 9820 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-01-11 11:34:40.694  INFO 9820 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-01-11 11:34:40.694  INFO 9820 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-01-11 11:34:40.694  INFO 9820 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-01-11 11:34:40.694  INFO 9820 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-01-11 11:34:40.694  INFO 9820 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-01-11 11:34:40.694  INFO 9820 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-01-11 11:34:40.757  INFO 9820 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200

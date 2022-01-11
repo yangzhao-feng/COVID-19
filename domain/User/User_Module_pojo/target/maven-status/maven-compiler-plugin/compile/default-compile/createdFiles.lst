@@ -1,0 +1,7 @@
+com\yang\user\impl\pojo\VO\Usertrip.class
+com\yang\user\impl\pojo\BO\UserTripBO.class
+com\yang\user\impl\pojo\BO\UserBO.class
+com\yang\user\impl\pojo\VO\UserInformation.class
+com\yang\user\impl\pojo\VO\Placelocation.class
+com\yang\user\impl\pojo\BO\UserTripBO2.class
+com\yang\user\impl\pojo\VO\Userlogin.class

@@ -1,0 +1,5 @@
+com\yang\user\mapper\UserloginMapper.class
+com\yang\user\mapper\PlacelocationMapper.class
+com\yang\user\mapper\UserInformationMapper.class
+com\yang\user\mapper\UsertripMapper.class
+com\yang\user\mapper\UserInformationMapperCustom.class

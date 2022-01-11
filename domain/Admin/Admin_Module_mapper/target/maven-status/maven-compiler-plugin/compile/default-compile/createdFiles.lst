@@ -1,0 +1,6 @@
+com\yang\admin\mapper\CommunityMapper.class
+com\yang\admin\mapper\BorderpatientsMapper.class
+com\yang\admin\mapper\PatientstatusMapper.class
+com\yang\admin\mapper\PatientsMapper.class
+com\yang\admin\mapper\PtientsMapperCustom.class
+com\yang\admin\mapper\PlaceMapper.class

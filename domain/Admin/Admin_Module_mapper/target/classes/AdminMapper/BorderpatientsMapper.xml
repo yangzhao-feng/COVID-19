@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yang.admin.mapper.BorderpatientsMapper" >
+  <resultMap id="BaseResultMap" type="com.yang.pojo.VO.Borderpatients" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="realname" property="realname" jdbcType="VARCHAR" />
+    <result column="id_number" property="idNumber" jdbcType="VARCHAR" />
+    <result column="city_list" property="cityList" jdbcType="VARCHAR" />
+    <result column="number_list" property="numberList" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

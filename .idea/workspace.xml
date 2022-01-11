@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="COVID-19:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a368c9bd-e15b-4288-8b0d-c2390d7623e4" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MavenRunner">
+    <option name="delegateBuildToMaven" value="true" />
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="1y5JzDnns2mfiMKSWRmp4xSdxMU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/domain/Admin/Admin_Module_mapper/src/main/resources/AdminMapper" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.14084506" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.yang.admin.listener" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\src\main\resources\AdminMapper" />
+      <recent name="C:\Users\yangz\IdeaProjects\COVID-19\domain\Home\Home_Module\src\main\resources" />
+      <recent name="C:\Users\yangz\IdeaProjects\COVID-19\domain\Home\Home_Module\src\main\java\com\yang\admin\aspect" />
+      <recent name="C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\src\main\resources\mapper" />
+      <recent name="C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\src\main\java\com\yang\mapper" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yangz\IdeaProjects\COVID-19\common" />
+      <recent name="C:\Users\yangz\IdeaProjects\COVID-19\domain\User" />
+      <recent name="C:\Users\yangz\IdeaProjects\COVID-19\domain\Home" />
+      <recent name="C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin" />
+      <recent name="C:\Users\yangz\IdeaProjects\COVID-19\domain" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yang.pojo.VO" />
+      <recent name="com.yang.admin.mapper" />
+      <recent name="com.yang.home.pojo.BO" />
+      <recent name="com.yang.home.BO" />
+      <recent name="com.yang.pojo.BO" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="excludedTypes">
+      <set>
+        <option value="HttpClient.HttpRequestRunConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.EurekaServerApplication">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserSpringApplication#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/UserSpringApplication.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests#6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="6" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests#9" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="9" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="AdminSpringApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Admin_Module" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yang.admin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yang.admin.AdminSpringApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="test" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yang.test.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Eureka_server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yang.eurekaServer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yang.eurekaServer.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomeSpringApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Home_Module" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yang.home.HomeSpringApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserSpringApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="User_Module" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yang.user.UserSpringApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="HTTP Request.generated-requests#6" />
+      <item itemvalue="HTTP Request.UserSpringApplication#1" />
+      <item itemvalue="HTTP Request.generated-requests#9" />
+      <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="Spring Boot.UserSpringApplication" />
+      <item itemvalue="Spring Boot.HomeSpringApplication" />
+      <item itemvalue="Spring Boot.EurekaServerApplication" />
+      <item itemvalue="Spring Boot.AdminSpringApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.EurekaServerApplication" />
+        <item itemvalue="Spring Boot.AdminSpringApplication" />
+        <item itemvalue="HTTP Request.generated-requests#9" />
+        <item itemvalue="HTTP Request.generated-requests#6" />
+        <item itemvalue="HTTP Request.UserSpringApplication#1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a368c9bd-e15b-4288-8b0d-c2390d7623e4" name="Default Changelist" comment="" />
+      <created>1631535778826</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1631535778826</updated>
+      <workItem from="1631535783205" duration="5315000" />
+      <workItem from="1631580571803" duration="8259000" />
+      <workItem from="1631855882099" duration="31723000" />
+      <workItem from="1631957775378" duration="467000" />
+      <workItem from="1631961363749" duration="14457000" />
+      <workItem from="1632023984561" duration="5563000" />
+      <workItem from="1632029571799" duration="859000" />
+      <workItem from="1632031335941" duration="1141000" />
+      <workItem from="1632033277287" duration="40908000" />
+      <workItem from="1632542375991" duration="5673000" />
+      <workItem from="1632548296152" duration="20592000" />
+      <workItem from="1632575839760" duration="717000" />
+      <workItem from="1632646645383" duration="3923000" />
+      <workItem from="1632726850385" duration="3956000" />
+      <workItem from="1632806679816" duration="4620000" />
+      <workItem from="1632903485224" duration="3625000" />
+      <workItem from="1632991211942" duration="8054000" />
+      <workItem from="1633082156546" duration="816000" />
+      <workItem from="1633164174451" duration="9774000" />
+      <workItem from="1633248346369" duration="3780000" />
+      <workItem from="1633327712627" duration="1845000" />
+      <workItem from="1633333440635" duration="1280000" />
+      <workItem from="1633426099210" duration="4655000" />
+      <workItem from="1633662783532" duration="3127000" />
+      <workItem from="1633667706917" duration="423000" />
+      <workItem from="1633668168961" duration="141000" />
+      <workItem from="1633742589234" duration="15707000" />
+      <workItem from="1633786510015" duration="2940000" />
+      <workItem from="1634260153338" duration="670000" />
+      <workItem from="1634261976696" duration="656000" />
+      <workItem from="1634263803929" duration="756000" />
+      <workItem from="1634265631908" duration="167000" />
+      <workItem from="1634274433300" duration="275000" />
+      <workItem from="1634275365061" duration="953000" />
+      <workItem from="1634277197681" duration="668000" />
+      <workItem from="1634299799754" duration="45000" />
+      <workItem from="1634299884239" duration="91000" />
+      <workItem from="1634300942423" duration="14000" />
+      <workItem from="1634300984887" duration="66000" />
+      <workItem from="1634301113169" duration="22000" />
+      <workItem from="1634301330086" duration="98000" />
+      <workItem from="1634301460130" duration="49000" />
+      <workItem from="1634301535071" duration="39000" />
+      <workItem from="1634347108693" duration="1058000" />
+      <workItem from="1634348189746" duration="35000" />
+      <workItem from="1634348403395" duration="623000" />
+      <workItem from="1634349144624" duration="36000" />
+      <workItem from="1634350025174" duration="28000" />
+      <workItem from="1634350077487" duration="17000" />
+      <workItem from="1634350126473" duration="92000" />
+      <workItem from="1634457592687" duration="4060000" />
+      <workItem from="1634883769444" duration="10917000" />
+      <workItem from="1635163260439" duration="1654000" />
+      <workItem from="1635319208964" duration="1344000" />
+      <workItem from="1635420610078" duration="9214000" />
+      <workItem from="1635751827908" duration="2126000" />
+      <workItem from="1635940428900" duration="820000" />
+      <workItem from="1636076492437" duration="3009000" />
+      <workItem from="1636091232286" duration="887000" />
+      <workItem from="1636264031599" duration="207000" />
+      <workItem from="1636689154931" duration="75000" />
+      <workItem from="1636689505882" duration="707000" />
+      <workItem from="1636690425389" duration="2107000" />
+      <workItem from="1636958721083" duration="13707000" />
+      <workItem from="1636974481331" duration="35000" />
+      <workItem from="1637050928802" duration="105000" />
+      <workItem from="1637301346300" duration="228000" />
+      <workItem from="1637301740587" duration="6218000" />
+      <workItem from="1637399673021" duration="24000" />
+      <workItem from="1637495474173" duration="1939000" />
+      <workItem from="1637651084939" duration="86000" />
+      <workItem from="1637989121737" duration="2268000" />
+      <workItem from="1638076928966" duration="3272000" />
+      <workItem from="1638102633087" duration="748000" />
+      <workItem from="1638344425635" duration="21000" />
+      <workItem from="1640744268792" duration="61000" />
+      <workItem from="1640744461766" duration="10000" />
+      <workItem from="1640744555462" duration="466000" />
+      <workItem from="1640745758663" duration="11094000" />
+      <workItem from="1640774197059" duration="28000" />
+      <workItem from="1640915674683" duration="4686000" />
+      <workItem from="1640920696410" duration="163000" />
+      <workItem from="1640921060870" duration="1348000" />
+      <workItem from="1640922422077" duration="5166000" />
+      <workItem from="1641099263280" duration="340000" />
+      <workItem from="1641099804402" duration="1275000" />
+      <workItem from="1641101137589" duration="600000" />
+      <workItem from="1641119753367" duration="5000" />
+      <workItem from="1641176955405" duration="3000" />
+      <workItem from="1641178435138" duration="6193000" />
+      <workItem from="1641270321980" duration="3144000" />
+      <workItem from="1641348744425" duration="8866000" />
+      <workItem from="1641432680611" duration="9617000" />
+      <workItem from="1641450417412" duration="753000" />
+      <workItem from="1641522150979" duration="295000" />
+      <workItem from="1641522724005" duration="1308000" />
+      <workItem from="1641524442755" duration="334000" />
+      <workItem from="1641531085817" duration="1485000" />
+      <workItem from="1641552042703" duration="2424000" />
+      <workItem from="1641554691638" duration="217000" />
+      <workItem from="1641605756257" duration="898000" />
+      <workItem from="1641606930430" duration="55000" />
+      <workItem from="1641607007641" duration="1397000" />
+      <workItem from="1641610057607" duration="161000" />
+      <workItem from="1641611179003" duration="19000" />
+      <workItem from="1641611266557" duration="1281000" />
+      <workItem from="1641638141787" duration="3565000" />
+      <workItem from="1641688042454" duration="1338000" />
+      <workItem from="1641691023739" duration="1292000" />
+      <workItem from="1641692427206" duration="6789000" />
+      <workItem from="1641730417073" duration="558000" />
+      <workItem from="1641731467187" duration="1035000" />
+      <workItem from="1641866998098" duration="382000" />
+      <workItem from="1641868939972" duration="667000" />
+      <workItem from="1641869626142" duration="308000" />
+      <workItem from="1641870102240" duration="3969000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="userTripBO2List" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
