@@ -9,6 +9,6 @@
     <result column="idNumber" property="idNumber" jdbcType="VARCHAR" />
     <result column="province" property="province" jdbcType="VARCHAR" />
     <result column="health" property="health" jdbcType="INTEGER" />
-    <result column="patientType" property="patientType" jdbcType="INTEGER" />
+    <result column="patientType" property="patientType" jdbcType="VARCHAR" />
   </resultMap>
 </mapper>

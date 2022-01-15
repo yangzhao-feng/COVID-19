@@ -1,77 +1,825 @@
-2022-01-11 11:33:46.950  INFO 9820 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
-2022-01-11 11:33:49.293  INFO 9820 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2022-01-11 11:33:49.293  WARN 9820 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/admin-service/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
-2022-01-11 11:33:49.293  INFO 9820 --- [main] com.yang.admin.AdminSpringApplication    : No active profile set, falling back to default profiles: default
-2022-01-11 11:33:53.050  INFO 9820 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-01-11 11:33:53.063  INFO 9820 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2022-01-11 11:33:53.230  INFO 9820 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109ms. Found 0 repository interfaces.
-2022-01-11 11:33:53.572  WARN 9820 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2022-01-11 11:33:53.984  WARN 9820 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.yang.admin]' package. Please check your configuration.
-2022-01-11 11:33:54.255  INFO 9820 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=756e4434-efb7-3078-a8f4-5fb21a81f6e7
-2022-01-11 11:33:54.564  INFO 9820 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2f9cabdc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-01-11 11:33:54.650  INFO 9820 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4bb6aed9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-01-11 11:33:55.263  INFO 9820 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 20003 (http)
-2022-01-11 11:33:55.320  INFO 9820 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-01-11 11:33:55.321  INFO 9820 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
-2022-01-11 11:33:55.330  INFO 9820 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
-2022-01-11 11:33:55.330  INFO 9820 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2022-01-11 11:33:55.331  INFO 9820 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2022-01-11 11:33:55.336  INFO 9820 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1i  8 Dec 2020]
-2022-01-11 11:33:55.845  INFO 9820 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-01-11 11:33:55.846  INFO 9820 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6505 ms
-2022-01-11 11:33:56.622  WARN 9820 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-01-11 11:33:56.622  INFO 9820 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-01-11 11:33:56.654  INFO 9820 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3e05586b
-2022-01-11 11:33:59.330  INFO 9820 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2022-01-11 11:34:04.832  WARN 9820 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-01-11 11:34:04.832  INFO 9820 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-01-11 11:34:05.275  INFO 9820 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-01-11 11:34:05.434  INFO 9820 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2022-01-11 11:34:05.449  INFO 9820 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2022-01-11 11:34:05.449  INFO 9820 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2022-01-11 11:34:05.449  INFO 9820 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2022-01-11 11:34:08.193  INFO 9820 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2022-01-11 11:34:08.318  INFO 9820 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2022-01-11 11:34:08.568  INFO 9820 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2022-01-11 11:34:08.615  INFO 9820 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2022-01-11 11:34:09.068  INFO 9820 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2022-01-11 11:34:09.068  INFO 9820 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2022-01-11 11:34:09.240  INFO 9820 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2022-01-11 11:34:09.240  INFO 9820 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2022-01-11 11:34:09.646  INFO 9820 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-01-11 11:34:10.053  INFO 9820 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-01-11 11:34:10.053  INFO 9820 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-01-11 11:34:10.053  INFO 9820 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-01-11 11:34:10.053  INFO 9820 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-01-11 11:34:10.053  INFO 9820 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-01-11 11:34:10.053  INFO 9820 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2022-01-11 11:34:10.053  INFO 9820 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-01-11 11:34:10.683  INFO 9820 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-01-11 11:34:10.686  INFO 9820 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 5
-2022-01-11 11:34:10.691  INFO 9820 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2022-01-11 11:34:10.698  INFO 9820 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1641872050696 with initial instances count: 0
-2022-01-11 11:34:10.700  INFO 9820 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ADMIN-SERVICE with eureka with status UP
-2022-01-11 11:34:10.701  INFO 9820 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1641872050701, current=UP, previous=STARTING]
-2022-01-11 11:34:10.705  INFO 9820 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVICE/localhost:admin-service:20003: registering service...
-2022-01-11 11:34:10.788  INFO 9820 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 20003 (http) with context path ''
-2022-01-11 11:34:10.788  INFO 9820 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 20003
-2022-01-11 11:34:10.804  INFO 9820 --- [main] com.yang.admin.AdminSpringApplication    : Started AdminSpringApplication in 28.283 seconds (JVM running for 29.652)
-2022-01-11 11:34:10.851  INFO 9820 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVICE/localhost:admin-service:20003 - registration status: 204
-2022-01-11 11:34:11.820  INFO 9820 --- [RMI TCP Connection(10)-192.168.62.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-01-11 11:34:11.820  INFO 9820 --- [RMI TCP Connection(10)-192.168.62.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-01-11 11:34:11.835  INFO 9820 --- [RMI TCP Connection(9)-192.168.62.2] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Starting...
-2022-01-11 11:34:11.835  INFO 9820 --- [RMI TCP Connection(10)-192.168.62.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
-2022-01-11 11:34:12.666  INFO 9820 --- [RMI TCP Connection(9)-192.168.62.2] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Start completed.
-2022-01-11 11:34:12.812  INFO 9820 --- [RMI TCP Connection(9)-192.168.62.2] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
-2022-01-11 11:34:14.827  INFO 9820 --- [RMI TCP Connection(9)-192.168.62.2] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2022-01-11 11:34:14.828  WARN 9820 --- [RMI TCP Connection(9)-192.168.62.2] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/admin-service/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
-2022-01-11 11:34:15.464  INFO 9820 --- [parallel-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
-2022-01-11 11:34:15.464  INFO 9820 --- [parallel-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
-2022-01-11 11:34:40.694  INFO 9820 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-01-11 11:34:40.694  INFO 9820 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-01-11 11:34:40.694  INFO 9820 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-01-11 11:34:40.694  INFO 9820 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-01-11 11:34:40.694  INFO 9820 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-01-11 11:34:40.694  INFO 9820 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2022-01-11 11:34:40.694  INFO 9820 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-01-11 11:34:40.757  INFO 9820 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-01-13 08:23:24.793  INFO 10496 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2022-01-13 08:23:27.163  INFO 10496 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-01-13 08:23:27.165  WARN 10496 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/admin-service/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2022-01-13 08:23:27.169  INFO 10496 --- [main] com.yang.admin.AdminSpringApplication    : No active profile set, falling back to default profiles: default
+2022-01-13 08:23:31.348  INFO 10496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-13 08:23:31.361  INFO 10496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-01-13 08:23:31.564  INFO 10496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 135ms. Found 0 repository interfaces.
+2022-01-13 08:23:31.886  WARN 10496 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-01-13 08:23:32.262  WARN 10496 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.yang.admin]' package. Please check your configuration.
+2022-01-13 08:23:32.503  INFO 10496 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=756e4434-efb7-3078-a8f4-5fb21a81f6e7
+2022-01-13 08:23:32.819  INFO 10496 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f2c527fb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-13 08:23:32.917  INFO 10496 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$edf2af8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-13 08:23:33.697  INFO 10496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 20003 (http)
+2022-01-13 08:23:33.760  INFO 10496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-13 08:23:33.760  INFO 10496 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2022-01-13 08:23:33.771  INFO 10496 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
+2022-01-13 08:23:33.771  INFO 10496 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-01-13 08:23:33.772  INFO 10496 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-01-13 08:23:33.777  INFO 10496 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1i  8 Dec 2020]
+2022-01-13 08:23:34.201  INFO 10496 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-13 08:23:34.202  INFO 10496 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6968 ms
+2022-01-13 08:23:34.513  WARN 10496 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-01-13 08:23:34.513  INFO 10496 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-01-13 08:23:34.548  INFO 10496 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@640cc04b
+2022-01-13 08:23:36.841  INFO 10496 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-01-13 08:23:41.385  WARN 10496 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-01-13 08:23:41.386  INFO 10496 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-01-13 08:23:41.972  INFO 10496 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-13 08:23:42.208  INFO 10496 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-01-13 08:23:42.212  INFO 10496 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-01-13 08:23:42.214  INFO 10496 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-01-13 08:23:42.215  INFO 10496 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2022-01-13 08:23:45.182  INFO 10496 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-01-13 08:23:45.345  INFO 10496 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-01-13 08:23:45.610  INFO 10496 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-01-13 08:23:45.675  INFO 10496 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-01-13 08:23:46.277  INFO 10496 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-01-13 08:23:46.277  INFO 10496 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-01-13 08:23:46.458  INFO 10496 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-01-13 08:23:46.458  INFO 10496 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-01-13 08:23:46.963  INFO 10496 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-13 08:23:47.445  INFO 10496 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-01-13 08:23:47.445  INFO 10496 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-01-13 08:23:47.445  INFO 10496 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-01-13 08:23:47.445  INFO 10496 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-01-13 08:23:47.446  INFO 10496 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-01-13 08:23:47.446  INFO 10496 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-01-13 08:23:47.446  INFO 10496 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-01-13 08:23:48.116  INFO 10496 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-01-13 08:23:48.120  INFO 10496 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 5
+2022-01-13 08:23:48.125  INFO 10496 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-01-13 08:23:48.132  INFO 10496 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1642033428130 with initial instances count: 0
+2022-01-13 08:23:48.134  INFO 10496 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ADMIN-SERVICE with eureka with status UP
+2022-01-13 08:23:48.136  INFO 10496 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1642033428136, current=UP, previous=STARTING]
+2022-01-13 08:23:48.141  INFO 10496 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVICE/localhost:admin-service:20003: registering service...
+2022-01-13 08:23:48.242  INFO 10496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 20003 (http) with context path ''
+2022-01-13 08:23:48.244  INFO 10496 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 20003
+2022-01-13 08:23:48.248  INFO 10496 --- [main] com.yang.admin.AdminSpringApplication    : Started AdminSpringApplication in 28.475 seconds (JVM running for 30.218)
+2022-01-13 08:23:48.343  INFO 10496 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVICE/localhost:admin-service:20003 - registration status: 204
+2022-01-13 08:23:48.966  INFO 10496 --- [RMI TCP Connection(1)-192.168.62.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-13 08:23:48.966  INFO 10496 --- [RMI TCP Connection(1)-192.168.62.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-13 08:23:48.980  INFO 10496 --- [RMI TCP Connection(2)-192.168.62.2] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Starting...
+2022-01-13 08:23:48.984  INFO 10496 --- [RMI TCP Connection(1)-192.168.62.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2022-01-13 08:23:50.288  INFO 10496 --- [RMI TCP Connection(2)-192.168.62.2] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Start completed.
+2022-01-13 08:23:50.476  INFO 10496 --- [RMI TCP Connection(2)-192.168.62.2] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2022-01-13 08:23:52.487  INFO 10496 --- [RMI TCP Connection(2)-192.168.62.2] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-01-13 08:23:52.488  WARN 10496 --- [RMI TCP Connection(2)-192.168.62.2] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/admin-service/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2022-01-13 08:23:53.032  INFO 10496 --- [parallel-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2022-01-13 08:23:53.043  INFO 10496 --- [parallel-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2022-01-13 08:24:18.122  INFO 10496 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-01-13 08:24:18.123  INFO 10496 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-01-13 08:24:18.124  INFO 10496 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-01-13 08:24:18.124  INFO 10496 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-01-13 08:24:18.125  INFO 10496 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-01-13 08:24:18.126  INFO 10496 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-01-13 08:24:18.126  INFO 10496 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-01-13 08:24:18.251  INFO 10496 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-01-13 08:28:47.451  INFO 10496 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-13 08:37:50.305  INFO 5076 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2022-01-13 08:37:52.791  INFO 5076 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-01-13 08:37:52.791  WARN 5076 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/admin-service/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2022-01-13 08:37:52.791  INFO 5076 --- [main] com.yang.admin.AdminSpringApplication    : No active profile set, falling back to default profiles: default
+2022-01-13 08:37:56.323  INFO 5076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-13 08:37:56.339  INFO 5076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-01-13 08:37:56.527  INFO 5076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 110ms. Found 0 repository interfaces.
+2022-01-13 08:37:56.872  WARN 5076 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-01-13 08:37:57.217  WARN 5076 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.yang.admin]' package. Please check your configuration.
+2022-01-13 08:37:57.499  INFO 5076 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=756e4434-efb7-3078-a8f4-5fb21a81f6e7
+2022-01-13 08:37:57.717  INFO 5076 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f0ffaf13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-13 08:37:57.811  INFO 5076 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d19b210] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-13 08:37:58.624  INFO 5076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 20003 (http)
+2022-01-13 08:37:58.671  INFO 5076 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-13 08:37:58.671  INFO 5076 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2022-01-13 08:37:58.686  INFO 5076 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
+2022-01-13 08:37:58.686  INFO 5076 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-01-13 08:37:58.686  INFO 5076 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-01-13 08:37:58.702  INFO 5076 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1i  8 Dec 2020]
+2022-01-13 08:37:59.108  INFO 5076 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-13 08:37:59.108  INFO 5076 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6255 ms
+2022-01-13 08:37:59.421  WARN 5076 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-01-13 08:37:59.421  INFO 5076 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-01-13 08:37:59.452  INFO 5076 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7c281eb8
+2022-01-13 08:38:01.733  INFO 5076 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-01-13 08:38:06.239  WARN 5076 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-01-13 08:38:06.239  INFO 5076 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-01-13 08:38:06.817  INFO 5076 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-13 08:38:07.051  INFO 5076 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-01-13 08:38:07.067  INFO 5076 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-01-13 08:38:07.067  INFO 5076 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-01-13 08:38:07.067  INFO 5076 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2022-01-13 08:38:09.958  INFO 5076 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-01-13 08:38:10.146  INFO 5076 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-01-13 08:38:10.396  INFO 5076 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-01-13 08:38:10.461  INFO 5076 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-01-13 08:38:10.946  INFO 5076 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-01-13 08:38:10.946  INFO 5076 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-01-13 08:38:11.149  INFO 5076 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-01-13 08:38:11.149  INFO 5076 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-01-13 08:38:11.665  INFO 5076 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-13 08:38:12.118  INFO 5076 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-01-13 08:38:12.118  INFO 5076 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-01-13 08:38:12.118  INFO 5076 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-01-13 08:38:12.118  INFO 5076 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-01-13 08:38:12.118  INFO 5076 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-01-13 08:38:12.118  INFO 5076 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-01-13 08:38:12.118  INFO 5076 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-01-13 08:38:12.821  INFO 5076 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-01-13 08:38:12.821  INFO 5076 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 5
+2022-01-13 08:38:12.821  INFO 5076 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-01-13 08:38:12.837  INFO 5076 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1642034292837 with initial instances count: 0
+2022-01-13 08:38:12.837  INFO 5076 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ADMIN-SERVICE with eureka with status UP
+2022-01-13 08:38:12.837  INFO 5076 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1642034292837, current=UP, previous=STARTING]
+2022-01-13 08:38:12.837  INFO 5076 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVICE/localhost:admin-service:20003: registering service...
+2022-01-13 08:38:12.946  INFO 5076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 20003 (http) with context path ''
+2022-01-13 08:38:12.946  INFO 5076 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 20003
+2022-01-13 08:38:12.946  INFO 5076 --- [main] com.yang.admin.AdminSpringApplication    : Started AdminSpringApplication in 28.049 seconds (JVM running for 31.353)
+2022-01-13 08:38:13.009  INFO 5076 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVICE/localhost:admin-service:20003 - registration status: 204
+2022-01-13 08:38:14.275  INFO 5076 --- [RMI TCP Connection(3)-192.168.62.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-13 08:38:14.275  INFO 5076 --- [RMI TCP Connection(3)-192.168.62.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-13 08:38:14.275  INFO 5076 --- [RMI TCP Connection(2)-192.168.62.2] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Starting...
+2022-01-13 08:38:14.290  INFO 5076 --- [RMI TCP Connection(3)-192.168.62.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2022-01-13 08:38:15.760  INFO 5076 --- [RMI TCP Connection(2)-192.168.62.2] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Start completed.
+2022-01-13 08:38:15.906  INFO 5076 --- [RMI TCP Connection(2)-192.168.62.2] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2022-01-13 08:38:17.922  INFO 5076 --- [RMI TCP Connection(2)-192.168.62.2] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-01-13 08:38:17.922  WARN 5076 --- [RMI TCP Connection(2)-192.168.62.2] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/admin-service/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2022-01-13 08:38:18.391  INFO 5076 --- [parallel-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2022-01-13 08:38:18.407  INFO 5076 --- [parallel-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2022-01-13 08:38:42.834  INFO 5076 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-01-13 08:38:42.834  INFO 5076 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-01-13 08:38:42.834  INFO 5076 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-01-13 08:38:42.834  INFO 5076 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-01-13 08:38:42.834  INFO 5076 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-01-13 08:38:42.834  INFO 5076 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-01-13 08:38:42.834  INFO 5076 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-01-13 08:38:42.938  INFO 5076 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-01-13 08:43:12.147  INFO 5076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-13 09:39:54.598  INFO 6800 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2022-01-13 09:39:56.899  INFO 6800 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-01-13 09:39:56.900  WARN 6800 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/admin-service/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2022-01-13 09:39:56.904  INFO 6800 --- [main] com.yang.admin.AdminSpringApplication    : No active profile set, falling back to default profiles: default
+2022-01-13 09:39:59.759  INFO 6800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-13 09:39:59.771  INFO 6800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-01-13 09:39:59.926  INFO 6800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97ms. Found 0 repository interfaces.
+2022-01-13 09:40:00.292  WARN 6800 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-01-13 09:40:00.638  WARN 6800 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.yang.admin]' package. Please check your configuration.
+2022-01-13 09:40:00.910  INFO 6800 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=756e4434-efb7-3078-a8f4-5fb21a81f6e7
+2022-01-13 09:40:01.140  INFO 6800 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bbe9b49f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-13 09:40:01.234  INFO 6800 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d803b79c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-13 09:40:02.001  INFO 6800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 20003 (http)
+2022-01-13 09:40:02.065  INFO 6800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-13 09:40:02.066  INFO 6800 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2022-01-13 09:40:02.076  INFO 6800 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
+2022-01-13 09:40:02.076  INFO 6800 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-01-13 09:40:02.077  INFO 6800 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-01-13 09:40:02.082  INFO 6800 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1i  8 Dec 2020]
+2022-01-13 09:40:02.532  INFO 6800 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-13 09:40:02.533  INFO 6800 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5583 ms
+2022-01-13 09:40:02.790  WARN 6800 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-01-13 09:40:02.791  INFO 6800 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-01-13 09:40:02.814  INFO 6800 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@270d43a7
+2022-01-13 09:40:04.739  INFO 6800 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-01-13 09:40:08.195  WARN 6800 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-01-13 09:40:08.195  INFO 6800 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-01-13 09:40:08.693  INFO 6800 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-13 09:40:08.870  INFO 6800 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-01-13 09:40:08.871  INFO 6800 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-01-13 09:40:08.873  INFO 6800 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-01-13 09:40:08.874  INFO 6800 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2022-01-13 09:40:11.442  INFO 6800 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-01-13 09:40:11.562  INFO 6800 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-01-13 09:40:11.780  INFO 6800 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-01-13 09:40:11.823  INFO 6800 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-01-13 09:40:12.150  INFO 6800 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-01-13 09:40:12.151  INFO 6800 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-01-13 09:40:12.299  INFO 6800 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-01-13 09:40:12.300  INFO 6800 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-01-13 09:40:12.669  INFO 6800 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-13 09:40:13.001  INFO 6800 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-01-13 09:40:13.002  INFO 6800 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-01-13 09:40:13.002  INFO 6800 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-01-13 09:40:13.003  INFO 6800 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-01-13 09:40:13.003  INFO 6800 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-01-13 09:40:13.003  INFO 6800 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-01-13 09:40:13.003  INFO 6800 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-01-13 09:40:13.506  INFO 6800 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-01-13 09:40:13.508  INFO 6800 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 5
+2022-01-13 09:40:13.512  INFO 6800 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-01-13 09:40:13.518  INFO 6800 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1642038013516 with initial instances count: 0
+2022-01-13 09:40:13.520  INFO 6800 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ADMIN-SERVICE with eureka with status UP
+2022-01-13 09:40:13.521  INFO 6800 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1642038013521, current=UP, previous=STARTING]
+2022-01-13 09:40:13.524  INFO 6800 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVICE/localhost:admin-service:20003: registering service...
+2022-01-13 09:40:13.606  INFO 6800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 20003 (http) with context path ''
+2022-01-13 09:40:13.607  INFO 6800 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 20003
+2022-01-13 09:40:13.610  INFO 6800 --- [main] com.yang.admin.AdminSpringApplication    : Started AdminSpringApplication in 23.355 seconds (JVM running for 24.896)
+2022-01-13 09:40:13.655  INFO 6800 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVICE/localhost:admin-service:20003 - registration status: 204
+2022-01-13 09:40:14.758  INFO 6800 --- [RMI TCP Connection(11)-192.168.62.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-13 09:40:14.759  INFO 6800 --- [RMI TCP Connection(11)-192.168.62.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-13 09:40:14.761  INFO 6800 --- [RMI TCP Connection(10)-192.168.62.2] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Starting...
+2022-01-13 09:40:14.771  INFO 6800 --- [RMI TCP Connection(11)-192.168.62.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2022-01-13 09:40:16.041  INFO 6800 --- [RMI TCP Connection(10)-192.168.62.2] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Start completed.
+2022-01-13 09:40:16.427  INFO 6800 --- [RMI TCP Connection(10)-192.168.62.2] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2022-01-13 09:40:18.434  INFO 6800 --- [RMI TCP Connection(10)-192.168.62.2] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-01-13 09:40:18.434  WARN 6800 --- [RMI TCP Connection(10)-192.168.62.2] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/admin-service/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2022-01-13 09:40:18.832  INFO 6800 --- [parallel-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2022-01-13 09:40:18.839  INFO 6800 --- [parallel-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2022-01-13 09:40:43.508  INFO 6800 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-01-13 09:40:43.509  INFO 6800 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-01-13 09:40:43.510  INFO 6800 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-01-13 09:40:43.510  INFO 6800 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-01-13 09:40:43.510  INFO 6800 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-01-13 09:40:43.510  INFO 6800 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-01-13 09:40:43.510  INFO 6800 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-01-13 09:40:43.567  INFO 6800 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-01-13 09:40:53.228  INFO 6800 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"上海-北京","idNumber":"442000200102042958","numberList":"1A1321","realname":"杨照锋","startAndEnd_City":["上海","北京"]}
+2022-01-13 09:45:02.619  INFO 2868 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2022-01-13 09:45:04.869  INFO 2868 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-01-13 09:45:04.871  WARN 2868 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/admin-service/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2022-01-13 09:45:04.875  INFO 2868 --- [main] com.yang.admin.AdminSpringApplication    : No active profile set, falling back to default profiles: default
+2022-01-13 09:45:06.991  INFO 2868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-13 09:45:06.999  INFO 2868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-01-13 09:45:07.116  INFO 2868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73ms. Found 0 repository interfaces.
+2022-01-13 09:45:07.351  WARN 2868 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-01-13 09:45:07.590  WARN 2868 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.yang.admin]' package. Please check your configuration.
+2022-01-13 09:45:07.749  INFO 2868 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d362c9af-2fdc-306e-b1ff-4c08a689e60d
+2022-01-13 09:45:07.922  INFO 2868 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a45444cb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-13 09:45:07.991  INFO 2868 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c06e47c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-13 09:45:08.508  INFO 2868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 20003 (http)
+2022-01-13 09:45:08.554  INFO 2868 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-13 09:45:08.555  INFO 2868 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2022-01-13 09:45:08.563  INFO 2868 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
+2022-01-13 09:45:08.564  INFO 2868 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-01-13 09:45:08.564  INFO 2868 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-01-13 09:45:08.570  INFO 2868 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1i  8 Dec 2020]
+2022-01-13 09:45:08.878  INFO 2868 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-13 09:45:08.878  INFO 2868 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3955 ms
+2022-01-13 09:45:09.086  WARN 2868 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-01-13 09:45:09.086  INFO 2868 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-01-13 09:45:09.104  INFO 2868 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@dab1f89
+2022-01-13 09:45:10.910  INFO 2868 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-01-13 09:45:12.458  WARN 2868 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminBorderController': Unsatisfied dependency expressed through field 'borderInfoService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'borderInfoServiceImpl': Unsatisfied dependency expressed through field 'borderpatientsMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'borderpatientsMapper' defined in file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\com\yang\admin\mapper\BorderpatientsMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.imooc.pojo.Borderpatientstatus'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.imooc.pojo.Borderpatientstatus
+2022-01-13 09:45:12.500  INFO 2868 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-01-13 09:45:12.505  WARN 2868 --- [main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.net.Inet6AddressImpl.getHostByAddr(Native Method)
+ java.net.InetAddress$2.getHostByAddr(InetAddress.java:933)
+ java.net.InetAddress.getHostFromNameService(InetAddress.java:618)
+ java.net.InetAddress.getHostName(InetAddress.java:560)
+ java.net.InetAddress.getHostName(InetAddress.java:532)
+ org.springframework.cloud.commons.util.InetUtils$$Lambda$69/1493625803.call(Unknown Source)
+ java.util.concurrent.FutureTask.run(FutureTask.java:266)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-01-13 09:45:12.528  INFO 2868 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-13 09:45:12.550 ERROR 2868 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminBorderController': Unsatisfied dependency expressed through field 'borderInfoService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'borderInfoServiceImpl': Unsatisfied dependency expressed through field 'borderpatientsMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'borderpatientsMapper' defined in file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\com\yang\admin\mapper\BorderpatientsMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.imooc.pojo.Borderpatientstatus'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.imooc.pojo.Borderpatientstatus
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:843) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at com.yang.admin.AdminSpringApplication.main(AdminSpringApplication.java:19) [classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'borderInfoServiceImpl': Unsatisfied dependency expressed through field 'borderpatientsMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'borderpatientsMapper' defined in file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\com\yang\admin\mapper\BorderpatientsMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.imooc.pojo.Borderpatientstatus'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.imooc.pojo.Borderpatientstatus
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'borderpatientsMapper' defined in file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\com\yang\admin\mapper\BorderpatientsMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.imooc.pojo.Borderpatientstatus'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.imooc.pojo.Borderpatientstatus
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1515) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 32 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.imooc.pojo.Borderpatientstatus'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.imooc.pojo.Borderpatientstatus
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1500) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 43 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.imooc.pojo.Borderpatientstatus'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.imooc.pojo.Borderpatientstatus
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 56 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.imooc.pojo.Borderpatientstatus'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.imooc.pojo.Borderpatientstatus
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:596) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:475) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:616) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration.sqlSessionFactory(MapperAutoConfiguration.java:157) ~[mapper-spring-boot-autoconfigure-2.1.5.jar:na]
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$5a44ec64.CGLIB$sqlSessionFactory$1(<generated>) ~[mapper-spring-boot-autoconfigure-2.1.5.jar:na]
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$5a44ec64$$FastClassBySpringCGLIB$$df43b92d.invoke(<generated>) ~[mapper-spring-boot-autoconfigure-2.1.5.jar:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$5a44ec64.sqlSessionFactory(<generated>) ~[mapper-spring-boot-autoconfigure-2.1.5.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_292]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_292]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_292]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_292]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 57 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.imooc.pojo.Borderpatientstatus'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.imooc.pojo.Borderpatientstatus
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:122) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:94) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:594) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	... 70 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.imooc.pojo.Borderpatientstatus'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.imooc.pojo.Borderpatientstatus
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:262) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:253) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:245) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:118) ~[mybatis-3.5.2.jar:3.5.2]
+	... 72 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.imooc.pojo.Borderpatientstatus'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.imooc.pojo.Borderpatientstatus
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116) ~[mybatis-3.5.2.jar:3.5.2]
+	... 76 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.imooc.pojo.Borderpatientstatus
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116) ~[mybatis-3.5.2.jar:3.5.2]
+	... 78 common frames omitted
+
+2022-01-13 09:45:46.257  INFO 9060 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2022-01-13 09:45:48.565  INFO 9060 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-01-13 09:45:48.567  WARN 9060 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/admin-service/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2022-01-13 09:45:48.571  INFO 9060 --- [main] com.yang.admin.AdminSpringApplication    : No active profile set, falling back to default profiles: default
+2022-01-13 09:45:50.666  INFO 9060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-13 09:45:50.674  INFO 9060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-01-13 09:45:50.796  INFO 9060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78ms. Found 0 repository interfaces.
+2022-01-13 09:45:51.040  WARN 9060 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-01-13 09:45:51.293  WARN 9060 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.yang.admin]' package. Please check your configuration.
+2022-01-13 09:45:51.463  INFO 9060 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d362c9af-2fdc-306e-b1ff-4c08a689e60d
+2022-01-13 09:45:51.658  INFO 9060 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a8f50e8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-13 09:45:51.727  INFO 9060 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c50f118b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-13 09:45:52.281  INFO 9060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 20003 (http)
+2022-01-13 09:45:52.333  INFO 9060 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-13 09:45:52.333  INFO 9060 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2022-01-13 09:45:52.341  INFO 9060 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
+2022-01-13 09:45:52.342  INFO 9060 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-01-13 09:45:52.342  INFO 9060 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-01-13 09:45:52.347  INFO 9060 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1i  8 Dec 2020]
+2022-01-13 09:45:52.631  INFO 9060 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-13 09:45:52.631  INFO 9060 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4019 ms
+2022-01-13 09:45:52.866  WARN 9060 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-01-13 09:45:52.867  INFO 9060 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-01-13 09:45:52.893  INFO 9060 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@ed2f2f6
+2022-01-13 09:45:54.718  INFO 9060 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-01-13 09:45:56.125  WARN 9060 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminBorderController': Unsatisfied dependency expressed through field 'borderInfoService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'borderInfoServiceImpl': Unsatisfied dependency expressed through field 'borderpatientsMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'borderpatientsMapper' defined in file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\com\yang\admin\mapper\BorderpatientsMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.imooc.pojo.Borderpatientstatus'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.imooc.pojo.Borderpatientstatus
+2022-01-13 09:45:56.167  INFO 9060 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-01-13 09:45:56.172  WARN 9060 --- [main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.net.Inet6AddressImpl.getHostByAddr(Native Method)
+ java.net.InetAddress$2.getHostByAddr(InetAddress.java:933)
+ java.net.InetAddress.getHostFromNameService(InetAddress.java:618)
+ java.net.InetAddress.getHostName(InetAddress.java:560)
+ java.net.InetAddress.getHostName(InetAddress.java:532)
+ org.springframework.cloud.commons.util.InetUtils$$Lambda$69/550752602.call(Unknown Source)
+ java.util.concurrent.FutureTask.run(FutureTask.java:266)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-01-13 09:45:56.187  INFO 9060 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-13 09:45:56.208 ERROR 9060 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminBorderController': Unsatisfied dependency expressed through field 'borderInfoService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'borderInfoServiceImpl': Unsatisfied dependency expressed through field 'borderpatientsMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'borderpatientsMapper' defined in file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\com\yang\admin\mapper\BorderpatientsMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.imooc.pojo.Borderpatientstatus'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.imooc.pojo.Borderpatientstatus
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:843) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at com.yang.admin.AdminSpringApplication.main(AdminSpringApplication.java:19) [classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'borderInfoServiceImpl': Unsatisfied dependency expressed through field 'borderpatientsMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'borderpatientsMapper' defined in file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\com\yang\admin\mapper\BorderpatientsMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.imooc.pojo.Borderpatientstatus'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.imooc.pojo.Borderpatientstatus
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'borderpatientsMapper' defined in file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\com\yang\admin\mapper\BorderpatientsMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.imooc.pojo.Borderpatientstatus'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.imooc.pojo.Borderpatientstatus
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1515) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 32 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.imooc.pojo.Borderpatientstatus'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.imooc.pojo.Borderpatientstatus
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1500) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 43 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.imooc.pojo.Borderpatientstatus'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.imooc.pojo.Borderpatientstatus
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 56 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.imooc.pojo.Borderpatientstatus'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.imooc.pojo.Borderpatientstatus
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:596) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:475) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:616) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration.sqlSessionFactory(MapperAutoConfiguration.java:157) ~[mapper-spring-boot-autoconfigure-2.1.5.jar:na]
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$5ee5b627.CGLIB$sqlSessionFactory$1(<generated>) ~[mapper-spring-boot-autoconfigure-2.1.5.jar:na]
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$5ee5b627$$FastClassBySpringCGLIB$$6862d9e.invoke(<generated>) ~[mapper-spring-boot-autoconfigure-2.1.5.jar:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$5ee5b627.sqlSessionFactory(<generated>) ~[mapper-spring-boot-autoconfigure-2.1.5.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_292]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_292]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_292]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_292]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 57 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\yangz\IdeaProjects\COVID-19\domain\Admin\Admin_Module_mapper\target\classes\AdminMapper\BorderpatientstatusMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.imooc.pojo.Borderpatientstatus'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.imooc.pojo.Borderpatientstatus
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:122) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:94) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:594) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	... 70 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.imooc.pojo.Borderpatientstatus'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.imooc.pojo.Borderpatientstatus
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:262) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:253) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:245) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:118) ~[mybatis-3.5.2.jar:3.5.2]
+	... 72 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.imooc.pojo.Borderpatientstatus'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.imooc.pojo.Borderpatientstatus
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116) ~[mybatis-3.5.2.jar:3.5.2]
+	... 76 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.imooc.pojo.Borderpatientstatus
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116) ~[mybatis-3.5.2.jar:3.5.2]
+	... 78 common frames omitted
+
+2022-01-13 09:47:36.425  INFO 12732 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2022-01-13 09:47:38.707  INFO 12732 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-01-13 09:47:38.709  WARN 12732 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/admin-service/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2022-01-13 09:47:38.712  INFO 12732 --- [main] com.yang.admin.AdminSpringApplication    : No active profile set, falling back to default profiles: default
+2022-01-13 09:47:40.730  INFO 12732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-13 09:47:40.738  INFO 12732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-01-13 09:47:40.860  INFO 12732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81ms. Found 0 repository interfaces.
+2022-01-13 09:47:41.065  WARN 12732 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-01-13 09:47:41.286  WARN 12732 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.yang.admin]' package. Please check your configuration.
+2022-01-13 09:47:41.470  INFO 12732 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d362c9af-2fdc-306e-b1ff-4c08a689e60d
+2022-01-13 09:47:41.658  INFO 12732 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$53569d8d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-13 09:47:41.738  INFO 12732 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6f70a08a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-13 09:47:42.255  INFO 12732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 20003 (http)
+2022-01-13 09:47:42.304  INFO 12732 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-13 09:47:42.305  INFO 12732 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2022-01-13 09:47:42.313  INFO 12732 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
+2022-01-13 09:47:42.314  INFO 12732 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-01-13 09:47:42.314  INFO 12732 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-01-13 09:47:42.318  INFO 12732 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1i  8 Dec 2020]
+2022-01-13 09:47:42.578  INFO 12732 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-13 09:47:42.578  INFO 12732 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3823 ms
+2022-01-13 09:47:42.804  WARN 12732 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-01-13 09:47:42.804  INFO 12732 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-01-13 09:47:42.821  INFO 12732 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@388623ad
+2022-01-13 09:47:44.636  INFO 12732 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-01-13 09:47:48.125  WARN 12732 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-01-13 09:47:48.126  INFO 12732 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-01-13 09:47:48.625  INFO 12732 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-13 09:47:48.841  INFO 12732 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-01-13 09:47:48.843  INFO 12732 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-01-13 09:47:48.847  INFO 12732 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-01-13 09:47:48.847  INFO 12732 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2022-01-13 09:47:51.441  INFO 12732 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-01-13 09:47:51.624  INFO 12732 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-01-13 09:47:51.853  INFO 12732 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-01-13 09:47:51.914  INFO 12732 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-01-13 09:47:52.153  INFO 12732 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-01-13 09:47:52.153  INFO 12732 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-01-13 09:47:52.317  INFO 12732 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-01-13 09:47:52.317  INFO 12732 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-01-13 09:47:52.647  INFO 12732 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-13 09:47:52.974  INFO 12732 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-01-13 09:47:52.975  INFO 12732 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-01-13 09:47:52.975  INFO 12732 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-01-13 09:47:52.975  INFO 12732 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-01-13 09:47:52.975  INFO 12732 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-01-13 09:47:52.975  INFO 12732 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-01-13 09:47:52.975  INFO 12732 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-01-13 09:47:53.366  INFO 12732 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-01-13 09:47:53.369  INFO 12732 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 5
+2022-01-13 09:47:53.372  INFO 12732 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-01-13 09:47:53.377  INFO 12732 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1642038473376 with initial instances count: 0
+2022-01-13 09:47:53.379  INFO 12732 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ADMIN-SERVICE with eureka with status UP
+2022-01-13 09:47:53.380  INFO 12732 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1642038473380, current=UP, previous=STARTING]
+2022-01-13 09:47:53.383  INFO 12732 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVICE/localhost:admin-service:20003: registering service...
+2022-01-13 09:47:53.456  INFO 12732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 20003 (http) with context path ''
+2022-01-13 09:47:53.457  INFO 12732 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 20003
+2022-01-13 09:47:53.460  INFO 12732 --- [main] com.yang.admin.AdminSpringApplication    : Started AdminSpringApplication in 21.208 seconds (JVM running for 22.887)
+2022-01-13 09:47:53.478  INFO 12732 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVICE/localhost:admin-service:20003 - registration status: 204
+2022-01-13 09:47:54.494  INFO 12732 --- [RMI TCP Connection(3)-192.168.62.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-13 09:47:54.495  INFO 12732 --- [RMI TCP Connection(3)-192.168.62.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-13 09:47:54.504  INFO 12732 --- [RMI TCP Connection(2)-192.168.62.2] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Starting...
+2022-01-13 09:47:54.508  INFO 12732 --- [RMI TCP Connection(3)-192.168.62.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2022-01-13 09:47:55.489  INFO 12732 --- [RMI TCP Connection(2)-192.168.62.2] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Start completed.
+2022-01-13 09:47:55.607  INFO 12732 --- [RMI TCP Connection(2)-192.168.62.2] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2022-01-13 09:47:57.613  INFO 12732 --- [RMI TCP Connection(2)-192.168.62.2] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-01-13 09:47:57.614  WARN 12732 --- [RMI TCP Connection(2)-192.168.62.2] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/admin-service/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2022-01-13 09:47:58.122  INFO 12732 --- [parallel-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2022-01-13 09:47:58.131  INFO 12732 --- [parallel-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2022-01-13 09:48:23.369  INFO 12732 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-01-13 09:48:23.370  INFO 12732 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-01-13 09:48:23.370  INFO 12732 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-01-13 09:48:23.370  INFO 12732 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-01-13 09:48:23.370  INFO 12732 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-01-13 09:48:23.370  INFO 12732 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-01-13 09:48:23.371  INFO 12732 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-01-13 09:48:23.438  INFO 12732 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-01-13 09:49:13.473  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"上海-北京","idNumber":"442000200102042958","numberList":"1A1321","realname":"杨照锋","startAndEnd_City":["上海","北京"]}
+2022-01-13 09:49:13.821  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 信息已存在 com.yang.pojo.VO.Borderpatients@4c5730bc
+2022-01-13 09:49:13.822  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"广州-北京","idNumber":"442000200102042930","numberList":"1A1322","realname":"厉洛灵","startAndEnd_City":["广州","北京"]}
+2022-01-13 09:49:14.050  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"杭州-北京","idNumber":"442000200102042959","numberList":"1A1323","realname":"拱正卿","startAndEnd_City":["杭州","北京"]}
+2022-01-13 09:49:14.297  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"深圳-北京","idNumber":"442000200102042910","numberList":"1A1324","realname":"卢鸣","startAndEnd_City":["深圳","北京"]}
+2022-01-13 09:49:14.568  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"郑州-北京","idNumber":"442000200102042911","numberList":"1A1325","realname":"严康适","startAndEnd_City":["郑州","北京"]}
+2022-01-13 09:49:14.832  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"南京-北京","idNumber":"442000200102042912","numberList":"1A1326","realname":"熊从蓉","startAndEnd_City":["南京","北京"]}
+2022-01-13 09:49:15.090  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"苏州-深圳","idNumber":"320324200001015864","numberList":"1A1598","realname":"京飞光","startAndEnd_City":["苏州","深圳"]}
+2022-01-13 09:49:15.337  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"苏州-深圳","idNumber":"320324200001015801","numberList":"1A1968","realname":"淦沛珊","startAndEnd_City":["苏州","深圳"]}
+2022-01-13 09:49:15.600  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"徐州-上海","idNumber":"320324200001015802","numberList":"1A5698","realname":"符添","startAndEnd_City":["徐州","上海"]}
+2022-01-13 09:49:15.853  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"徐州-深圳","idNumber":"320324200001015803","numberList":"1A9864","realname":"郯雨泽","startAndEnd_City":["徐州","深圳"]}
+2022-01-13 09:49:16.117  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"徐州-上海","idNumber":"320324200001015804","numberList":"2G5564","realname":"詹听云","startAndEnd_City":["徐州","上海"]}
+2022-01-13 09:49:16.369  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"上海-苏州","idNumber":"320324200001015805","numberList":"1A3298","realname":"望孤晴","startAndEnd_City":["上海","苏州"]}
+2022-01-13 09:49:16.615  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"苏州-上海","idNumber":"320321200302056692","numberList":"2G6598","realname":"焉浓绮","startAndEnd_City":["苏州","上海"]}
+2022-01-13 09:49:16.858  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"合肥-苏州","idNumber":"320321200302056601","numberList":"2G8967","realname":"野玉珂","startAndEnd_City":["合肥","苏州"]}
+2022-01-13 09:49:17.111  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"石家庄-苏州","idNumber":"320321200302056602","numberList":"2G8968","realname":"强安易","startAndEnd_City":["石家庄","苏州"]}
+2022-01-13 09:49:17.379  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"无锡-上海","idNumber":"320321200302056603","numberList":"2G8969","realname":"濯俊捷","startAndEnd_City":["无锡","上海"]}
+2022-01-13 09:49:17.634  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"深圳-苏州","idNumber":"320321200302056604","numberList":"2G8970","realname":"张廖又松","startAndEnd_City":["深圳","苏州"]}
+2022-01-13 09:49:17.889  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"镇江-苏州","idNumber":"325328200102055405","numberList":"2G8971","realname":"改煜","startAndEnd_City":["镇江","苏州"]}
+2022-01-13 09:49:18.143  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"北京-上海","idNumber":"325328200102055406","numberList":"2G8972","realname":"边痴海","startAndEnd_City":["北京","上海"]}
+2022-01-13 09:49:18.413  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"天津-苏州","idNumber":"325328200102055407","numberList":"2G8973","realname":"纳友菱","startAndEnd_City":["天津","苏州"]}
+2022-01-13 09:49:18.657  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"苏州-上海","idNumber":"325328200102055408","numberList":"2G8974","realname":"甄柔雅","startAndEnd_City":["苏州","上海"]}
+2022-01-13 09:49:18.906  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"无锡-上海","idNumber":"325328200102055409","numberList":"2G8975","realname":"盍子实","startAndEnd_City":["无锡","上海"]}
+2022-01-13 09:49:19.160  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"泰州-北京","idNumber":"325328200102055410","numberList":"2G8976","realname":"无莹华","startAndEnd_City":["泰州","北京"]}
+2022-01-13 09:49:19.409  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"上海-苏州","idNumber":"325328200106055411","numberList":"1A3294","realname":"东方睿诚","startAndEnd_City":["上海","苏州"]}
+2022-01-13 09:49:19.658  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"苏州-南京","idNumber":"326975200106096512","numberList":"1A3295","realname":"慎稷","startAndEnd_City":["苏州","南京"]}
+2022-01-13 09:49:19.902  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"盐城-苏州","idNumber":"326975200106096513","numberList":"1A3296","realname":"光波峻","startAndEnd_City":["盐城","苏州"]}
+2022-01-13 09:49:20.152  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"淮安-苏州","idNumber":"326975200106096514","numberList":"1A3297","realname":"畅梦玉","startAndEnd_City":["淮安","苏州"]}
+2022-01-13 09:49:20.419  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"盐城-北京","idNumber":"326975200106096515","numberList":"1A3298","realname":"友贞","startAndEnd_City":["盐城","北京"]}
+2022-01-13 09:49:20.667  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"郑州-上海","idNumber":"326975200106096516","numberList":"1A3299","realname":"叶艳","startAndEnd_City":["郑州","上海"]}
+2022-01-13 09:49:20.924  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"苏州-北京","idNumber":"326975200106096517","numberList":"1A3300","realname":"盖嘉言","startAndEnd_City":["苏州","北京"]}
+2022-01-13 09:49:21.186  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"盐城-北京","idNumber":"326975200106096518","numberList":"1A3301","realname":"计语梦","startAndEnd_City":["盐城","北京"]}
+2022-01-13 09:49:21.617  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"盐城-北京","idNumber":"11010119900307731X","numberList":"1A3302","realname":"竭暄妍","startAndEnd_City":["盐城","北京"]}
+2022-01-13 09:49:21.865  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"晋州-北京","idNumber":"110101199003075293","numberList":"1A3303","realname":"登傲薇","startAndEnd_City":["晋州","北京"]}
+2022-01-13 09:49:22.109  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"杭州-北京","idNumber":"110101199003077336","numberList":"1A3304","realname":"普香梅","startAndEnd_City":["杭州","北京"]}
+2022-01-13 09:49:22.357  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"深圳-北京","idNumber":"110101199003071794","numberList":"1A3305","realname":"蔚致远","startAndEnd_City":["深圳","北京"]}
+2022-01-13 09:49:22.681  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"烟台-北京","idNumber":"110101199003075453","numberList":"1A3306","realname":"飞小珍","startAndEnd_City":["烟台","北京"]}
+2022-01-13 09:49:22.957  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"济南-北京","idNumber":"11010119900307571X","numberList":"1A3307","realname":"磨玲","startAndEnd_City":["济南","北京"]}
+2022-01-13 09:49:23.207  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"杭州-北京","idNumber":"110101199003071639","numberList":"1A3308","realname":"乜翠曼","startAndEnd_City":["杭州","北京"]}
+2022-01-13 09:49:23.483  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"杭州-北京","idNumber":"110101199003072797","numberList":"1A3309","realname":"郦涵阳","startAndEnd_City":["杭州","北京"]}
+2022-01-13 09:49:23.732  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"杭州-北京","idNumber":"110101199003078734","numberList":"1A3310","realname":"乐正梓榆","startAndEnd_City":["杭州","北京"]}
+2022-01-13 09:49:24.000  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"南京-北京","idNumber":"110101199003073351","numberList":"1A3311","realname":"鱼令怡","startAndEnd_City":["南京","北京"]}
+2022-01-13 09:49:24.261  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"镇江-北京","idNumber":"110101199003076050","numberList":"1A3312","realname":"呼延孟阳","startAndEnd_City":["镇江","北京"]}
+2022-01-13 09:49:24.532  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"上海-北京","idNumber":"110101199003079059","numberList":"1A3313","realname":"念又晴","startAndEnd_City":["上海","北京"]}
+2022-01-13 09:49:24.836  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"苏州-北京","idNumber":"110101199003070791","numberList":"1A3314","realname":"千怀薇","startAndEnd_City":["苏州","北京"]}
+2022-01-13 09:49:25.099  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"烟台-北京","idNumber":"110101199003070695","numberList":"1A3315","realname":"戈思萌","startAndEnd_City":["烟台","北京"]}
+2022-01-13 09:49:25.341  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"常州-北京","idNumber":"110101199003071938","numberList":"1A3316","realname":"南宫芷文","startAndEnd_City":["常州","北京"]}
+2022-01-13 09:49:25.589  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"常州-北京","idNumber":"110101199003079059","numberList":"1A3317","realname":"果余妍","startAndEnd_City":["常州","北京"]}
+2022-01-13 09:49:25.842  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"盐城-北京","idNumber":"110101199003073255","numberList":"1A3318","realname":"洛飞鸣","startAndEnd_City":["盐城","北京"]}
+2022-01-13 09:49:26.101  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"徐州-北京","idNumber":"110101199003070599","numberList":"1A3319","realname":"仁漾","startAndEnd_City":["徐州","北京"]}
+2022-01-13 09:49:26.347  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"上海-北京","idNumber":"11010119900307117X","numberList":"1A3320","realname":"祭凝竹","startAndEnd_City":["上海","北京"]}
+2022-01-13 09:49:26.610  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"上海-北京","idNumber":"110101199003078750","numberList":"1A3321","realname":"芮半香","startAndEnd_City":["上海","北京"]}
+2022-01-13 09:49:26.859  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"苏州-北京","idNumber":"110101199003070759","numberList":"1A3322","realname":"辟云露","startAndEnd_City":["苏州","北京"]}
+2022-01-13 09:49:27.105  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"苏州-北京","idNumber":"110101199003076413","numberList":"1A3323","realname":"尧寄南","startAndEnd_City":["苏州","北京"]}
+2022-01-13 09:49:27.382  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"苏州-北京","idNumber":"110101199003074338","numberList":"1A3324","realname":"塞琼华","startAndEnd_City":["苏州","北京"]}
+2022-01-13 09:49:27.637  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"镇江-北京","idNumber":"110101199003072914","numberList":"1A3325","realname":"贰斐斐","startAndEnd_City":["镇江","北京"]}
+2022-01-13 09:49:27.880  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"镇江-北京","idNumber":"110101199003077379","numberList":"1A3326","realname":"泉骏俊","startAndEnd_City":["镇江","北京"]}
+2022-01-13 09:49:28.161  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"镇江-北京","idNumber":"110101199003071292","numberList":"1A3327","realname":"刁雁芙","startAndEnd_City":["镇江","北京"]}
+2022-01-13 09:49:28.415  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"苏州-北京","idNumber":"11010119900307475X","numberList":"1A3328","realname":"冷峰","startAndEnd_City":["苏州","北京"]}
+2022-01-13 09:49:28.659  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"深圳-北京","idNumber":"110101199003076018","numberList":"1A3329","realname":"赫连如雪","startAndEnd_City":["深圳","北京"]}
+2022-01-13 09:49:28.909  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"深圳-北京","idNumber":"110101199003076173","numberList":"1A3330","realname":"广宏达","startAndEnd_City":["深圳","北京"]}
+2022-01-13 09:49:29.203  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"深圳-北京","idNumber":"110101199003072172","numberList":"1A3331","realname":"泥千","startAndEnd_City":["深圳","北京"]}
+2022-01-13 09:49:29.483  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"徐州-北京","idNumber":"110101199003079374","numberList":"1A3332","realname":"邬友珊","startAndEnd_City":["徐州","北京"]}
+2022-01-13 09:49:29.755  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"苏州-北京","idNumber":"110101199003073490","numberList":"1A3333","realname":"平雅爱","startAndEnd_City":["苏州","北京"]}
+2022-01-13 09:49:30.013  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"苏州-北京","idNumber":"110101199003077432","numberList":"1A3334","realname":"驹清晖","startAndEnd_City":["苏州","北京"]}
+2022-01-13 09:49:30.292  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"苏州-北京","idNumber":"110101199003076712","numberList":"1A3335","realname":"那雅容","startAndEnd_City":["苏州","北京"]}
+2022-01-13 09:49:30.615  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"盐城-北京","idNumber":"110101199003075277","numberList":"1A3336","realname":"诸含芙","startAndEnd_City":["盐城","北京"]}
+2022-01-13 09:49:31.002  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"上海-深圳","idNumber":"110101199003072893","numberList":"1A3337","realname":"翟湉湉","startAndEnd_City":["上海","深圳"]}
+2022-01-13 09:49:31.456  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"常州-深圳","idNumber":"110101199003072439","numberList":"1A3338","realname":"兰哲瀚","startAndEnd_City":["常州","深圳"]}
+2022-01-13 09:49:32.043  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"常州-深圳","idNumber":"110101199003076894","numberList":"1A3339","realname":"钞珺娅","startAndEnd_City":["常州","深圳"]}
+2022-01-13 09:49:32.322  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"杭州-深圳","idNumber":"110101199003075672","numberList":"1A3340","realname":"才其","startAndEnd_City":["杭州","深圳"]}
+2022-01-13 09:49:32.617  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"上海-深圳","idNumber":"11010119900307117X","numberList":"1A3341","realname":"松思淼","startAndEnd_City":["上海","深圳"]}
+2022-01-13 09:49:32.897  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"上海-深圳","idNumber":"110101199003070273","numberList":"1A3342","realname":"扈晴雪","startAndEnd_City":["上海","深圳"]}
+2022-01-13 09:49:33.286  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"北京-深圳","idNumber":"110101199003071735","numberList":"1A3343","realname":"谈惜寒","startAndEnd_City":["北京","深圳"]}
+2022-01-13 09:49:33.640  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"长春-深圳","idNumber":"110101199003070230","numberList":"1A3344","realname":"尚风","startAndEnd_City":["长春","深圳"]}
+2022-01-13 09:49:33.994  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"长春-深圳","idNumber":"110101199003071030","numberList":"1A3345","realname":"铎丹秋","startAndEnd_City":["长春","深圳"]}
+2022-01-13 09:49:34.253  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"南京-深圳","idNumber":"110101199003072439","numberList":"1A3346","realname":"局初瑶","startAndEnd_City":["南京","深圳"]}
+2022-01-13 09:49:34.499  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"南京-深圳","idNumber":"110101199003072156","numberList":"1A3347","realname":"秘驰媛","startAndEnd_City":["南京","深圳"]}
+2022-01-13 09:49:34.741  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"泰州-深圳","idNumber":"110101199003070097","numberList":"1A3348","realname":"愈小翠","startAndEnd_City":["泰州","深圳"]}
+2022-01-13 09:49:35.031  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"北京-深圳","idNumber":"110101199003075672","numberList":"1A3349","realname":"王俊郎","startAndEnd_City":["北京","深圳"]}
+2022-01-13 09:49:35.277  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"北京-深圳","idNumber":"110101199003072738","numberList":"1A3350","realname":"板祯","startAndEnd_City":["北京","深圳"]}
+2022-01-13 09:49:35.529  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"泰州-深圳","idNumber":"11010119900307125X","numberList":"1A3351","realname":"赫飞文","startAndEnd_City":["泰州","深圳"]}
+2022-01-13 09:49:35.778  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"宁波-深圳","idNumber":"110101199003074434","numberList":"1A3352","realname":"节望慕","startAndEnd_City":["宁波","深圳"]}
+2022-01-13 09:49:36.095  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"宁波-深圳","idNumber":"110101199003073458","numberList":"1A3353","realname":"善玄穆","startAndEnd_City":["宁波","深圳"]}
+2022-01-13 09:49:36.338  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"镇江-深圳","idNumber":"110101199003077651","numberList":"1A3354","realname":"烟和璧","startAndEnd_City":["镇江","深圳"]}
+2022-01-13 09:49:36.584  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"镇江-深圳","idNumber":"110101199003078750","numberList":"1A3355","realname":"戴源","startAndEnd_City":["镇江","深圳"]}
+2022-01-13 09:49:36.849  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"南京-深圳","idNumber":"11010119900307635X","numberList":"1A3356","realname":"方幼荷","startAndEnd_City":["南京","深圳"]}
+2022-01-13 09:49:37.097  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"无锡-深圳","idNumber":"110101199003075031","numberList":"1A3357","realname":"年霞英","startAndEnd_City":["无锡","深圳"]}
+2022-01-13 09:49:37.351  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"无锡-深圳","idNumber":"110101199003070070","numberList":"1A3358","realname":"晋飞宇","startAndEnd_City":["无锡","深圳"]}
+2022-01-13 09:49:37.647  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"杭州-深圳","idNumber":"110101199003071137","numberList":"1A3359","realname":"相醉巧","startAndEnd_City":["杭州","深圳"]}
+2022-01-13 09:49:37.891  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"杭州-深圳","idNumber":"110101199003071057","numberList":"1A3360","realname":"功亦玉","startAndEnd_City":["杭州","深圳"]}
+2022-01-13 09:49:38.146  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"南京-深圳","idNumber":"110101199003076210","numberList":"1A3361","realname":"仲孙君之","startAndEnd_City":["南京","深圳"]}
+2022-01-13 09:49:38.389  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"运城-深圳","idNumber":"110101199003073271","numberList":"1A3362","realname":"闾丘雅晗","startAndEnd_City":["运城","深圳"]}
+2022-01-13 09:49:38.635  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"运城-深圳","idNumber":"110101199003070433","numberList":"1A3363","realname":"佴寒凝","startAndEnd_City":["运城","深圳"]}
+2022-01-13 09:49:38.913  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"南京-深圳","idNumber":"110101199003079710","numberList":"1A3364","realname":"郭洋","startAndEnd_City":["南京","深圳"]}
+2022-01-13 09:49:39.176  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"北京-深圳","idNumber":"110101199003070732","numberList":"1A3365","realname":"微生梦槐","startAndEnd_City":["北京","深圳"]}
+2022-01-13 09:49:39.434  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"北京-深圳","idNumber":"11010119900307715X","numberList":"1A3366","realname":"可古香","startAndEnd_City":["北京","深圳"]}
+2022-01-13 09:49:39.678  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"晋城-深圳","idNumber":"110101199003074995","numberList":"1A3367","realname":"军豫","startAndEnd_City":["晋城","深圳"]}
+2022-01-13 09:49:39.926  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"晋城-深圳","idNumber":"110101199003073618","numberList":"1A3368","realname":"周冰蝶","startAndEnd_City":["晋城","深圳"]}
+2022-01-13 09:49:40.163  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"北京-上海","idNumber":"110101199003079577","numberList":"1A3369","realname":"钊飞龙","startAndEnd_City":["北京","上海"]}
+2022-01-13 09:49:40.407  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"晋城-上海","idNumber":"110101199003071890","numberList":"1A3370","realname":"雍夜玉","startAndEnd_City":["晋城","上海"]}
+2022-01-13 09:49:40.654  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"北京-上海","idNumber":"110101199003079278","numberList":"1A3371","realname":"宫雯华","startAndEnd_City":["北京","上海"]}
+2022-01-13 09:49:40.895  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"北京-上海","idNumber":"110101199003070759","numberList":"1A3372","realname":"腾宣朗","startAndEnd_City":["北京","上海"]}
+2022-01-13 09:49:41.138  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"苏州-上海","idNumber":"11010119900307213X","numberList":"1A3373","realname":"矫静慧","startAndEnd_City":["苏州","上海"]}
+2022-01-13 09:49:41.384  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"苏州-上海","idNumber":"110101199003071030","numberList":"1A3374","realname":"储翠芙","startAndEnd_City":["苏州","上海"]}
+2022-01-13 09:49:41.625  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"北京-上海","idNumber":"110101199003070994","numberList":"1A3375","realname":"胡长岳","startAndEnd_City":["北京","上海"]}
+2022-01-13 09:49:41.871  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"南京-上海","idNumber":"110101199003073175","numberList":"1A3376","realname":"伏易绿","startAndEnd_City":["南京","上海"]}
+2022-01-13 09:49:42.122  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"北京-上海","idNumber":"110101199003073431","numberList":"1A3377","realname":"止芫华","startAndEnd_City":["北京","上海"]}
+2022-01-13 09:49:42.364  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"苏州-上海","idNumber":"110101199003073132","numberList":"1A3378","realname":"俞学名","startAndEnd_City":["苏州","上海"]}
+2022-01-13 09:49:42.608  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"南京-上海","idNumber":"110101199003073255","numberList":"1A3379","realname":"卞海桃","startAndEnd_City":["南京","上海"]}
+2022-01-13 09:49:42.868  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"苏州-上海","idNumber":"110101199003079091","numberList":"1A3380","realname":"桐忆丹","startAndEnd_City":["苏州","上海"]}
+2022-01-13 09:49:43.138  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"南京-上海","idNumber":"110101199003075832","numberList":"1A3381","realname":"皋凌","startAndEnd_City":["南京","上海"]}
+2022-01-13 09:49:43.392  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"苏州-上海","idNumber":"110101199003074493","numberList":"1A3382","realname":"开辰","startAndEnd_City":["苏州","上海"]}
+2022-01-13 09:49:43.635  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"无锡-上海","idNumber":"110101199003073538","numberList":"1A3383","realname":"原蓓","startAndEnd_City":["无锡","上海"]}
+2022-01-13 09:49:43.874  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"无锡-上海","idNumber":"110101199003079294","numberList":"1A3384","realname":"化谷之","startAndEnd_City":["无锡","上海"]}
+2022-01-13 09:49:44.122  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"苏州-上海","idNumber":"110101199003072156","numberList":"1A3385","realname":"呼晨","startAndEnd_City":["苏州","上海"]}
+2022-01-13 09:49:44.361  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"无锡-上海","idNumber":"110101199003072295","numberList":"1A3386","realname":"彭余","startAndEnd_City":["无锡","上海"]}
+2022-01-13 09:49:44.605  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"太原-上海","idNumber":"110101199003075656","numberList":"1A3387","realname":"檀兆","startAndEnd_City":["太原","上海"]}
+2022-01-13 09:49:44.849  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"太原-上海","idNumber":"110101199003077176","numberList":"1A3388","realname":"浦映菱","startAndEnd_City":["太原","上海"]}
+2022-01-13 09:49:45.108  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"太原-上海","idNumber":"110101199003072359","numberList":"1A3389","realname":"信绮山","startAndEnd_City":["太原","上海"]}
+2022-01-13 09:49:45.418  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"运城-上海","idNumber":"110101199003076771","numberList":"1A3390","realname":"汉运","startAndEnd_City":["运城","上海"]}
+2022-01-13 09:49:45.658  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"运城-上海","idNumber":"110101199003078216","numberList":"1A3391","realname":"翁冬卉","startAndEnd_City":["运城","上海"]}
+2022-01-13 09:49:45.902  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"运城-上海","idNumber":"110101199003078574","numberList":"1A3392","realname":"拜诗双","startAndEnd_City":["运城","上海"]}
+2022-01-13 09:49:46.146  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"深圳-上海","idNumber":"110101199003070054","numberList":"1A3393","realname":"景萌运","startAndEnd_City":["深圳","上海"]}
+2022-01-13 09:49:46.390  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"深圳-上海","idNumber":"110101199003078638","numberList":"1A3394","realname":"大茉","startAndEnd_City":["深圳","上海"]}
+2022-01-13 09:49:46.634  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"徐州-上海","idNumber":"110101199003078275","numberList":"1A3395","realname":"冀南露","startAndEnd_City":["徐州","上海"]}
+2022-01-13 09:49:46.871  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"徐州-上海","idNumber":"110101199003070775","numberList":"1A3396","realname":"肥理群","startAndEnd_City":["徐州","上海"]}
+2022-01-13 09:49:47.113  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"石家庄-上海","idNumber":"110101199003075795","numberList":"1A3397","realname":"归雅媚","startAndEnd_City":["石家庄","上海"]}
+2022-01-13 09:49:47.351  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"石家庄-上海","idNumber":"110101199003073271","numberList":"1A3398","realname":"曲思雁","startAndEnd_City":["石家庄","上海"]}
+2022-01-13 09:49:47.599  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"石家庄-上海","idNumber":"110101199003074354","numberList":"1A3399","realname":"鲜于依薇","startAndEnd_City":["石家庄","上海"]}
+2022-01-13 09:49:47.842  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"石家庄-上海","idNumber":"110101199003075373","numberList":"1A3400","realname":"毋心怡","startAndEnd_City":["石家庄","上海"]}
+2022-01-13 09:49:48.082  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"深圳-苏州","idNumber":"130102199006123019","numberList":"1A3401","realname":"喻米雪","startAndEnd_City":["深圳","苏州"]}
+2022-01-13 09:49:48.317  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"深圳-苏州","idNumber":"130102199006126690","numberList":"1A3402","realname":"霜凝雁","startAndEnd_City":["深圳","苏州"]}
+2022-01-13 09:49:48.562  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"深圳-苏州","idNumber":"130102199006121670","numberList":"1A3403","realname":"米欣怡","startAndEnd_City":["深圳","苏州"]}
+2022-01-13 09:49:48.802  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"青岛-苏州","idNumber":"130102199006123633","numberList":"1A3404","realname":"鲜寄蓝","startAndEnd_City":["青岛","苏州"]}
+2022-01-13 09:49:49.039  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"济南-苏州","idNumber":"130102199006128071","numberList":"1A3405","realname":"何晓瑶","startAndEnd_City":["济南","苏州"]}
+2022-01-13 09:49:49.289  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"济南-苏州","idNumber":"130102199006124679","numberList":"2G3406","realname":"窦翠茵","startAndEnd_City":["济南","苏州"]}
+2022-01-13 09:49:49.530  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"青岛-苏州","idNumber":"130102199006124134","numberList":"2G3407","realname":"扬昆锐","startAndEnd_City":["青岛","苏州"]}
+2022-01-13 09:49:49.769  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"青岛-苏州","idNumber":"130102199006129357","numberList":"2G3408","realname":"合泽洋","startAndEnd_City":["青岛","苏州"]}
+2022-01-13 09:49:50.010  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"深圳-苏州","idNumber":"130102199006120897","numberList":"2G3409","realname":"左丘靖易","startAndEnd_City":["深圳","苏州"]}
+2022-01-13 09:49:50.254  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"深圳-苏州","idNumber":"130102199006123094","numberList":"2G3410","realname":"纵宛亦","startAndEnd_City":["深圳","苏州"]}
+2022-01-13 09:49:50.494  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"杭州-苏州","idNumber":"130102199006127159","numberList":"2G3411","realname":"同文","startAndEnd_City":["杭州","苏州"]}
+2022-01-13 09:49:50.739  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"杭州-苏州","idNumber":"130102199006126754","numberList":"2G3412","realname":"令狐州","startAndEnd_City":["杭州","苏州"]}
+2022-01-13 09:49:50.979  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"杭州-苏州","idNumber":"130102199006124257","numberList":"1A3413","realname":"泣鹤","startAndEnd_City":["杭州","苏州"]}
+2022-01-13 09:49:51.228  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"哈尔滨-苏州","idNumber":"130102199006123895","numberList":"2G3414","realname":"谷若雁","startAndEnd_City":["哈尔滨","苏州"]}
+2022-01-13 09:49:51.467  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"哈尔滨-苏州","idNumber":"130102199006127837","numberList":"1A3415","realname":"书娟巧","startAndEnd_City":["哈尔滨","苏州"]}
+2022-01-13 09:49:51.711  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"哈尔滨-苏州","idNumber":"130102199006125671","numberList":"2G3416","realname":"卯涵畅","startAndEnd_City":["哈尔滨","苏州"]}
+2022-01-13 09:49:51.956  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"北京-苏州","idNumber":"130102199006127976","numberList":"1A3417","realname":"单于思嘉","startAndEnd_City":["北京","苏州"]}
+2022-01-13 09:49:52.197  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"北京-苏州","idNumber":"130102199006120133","numberList":"2G3418","realname":"却元","startAndEnd_City":["北京","苏州"]}
+2022-01-13 09:49:52.438  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"北京-苏州","idNumber":"130102199006121339","numberList":"1A3419","realname":"铁含桃","startAndEnd_City":["北京","苏州"]}
+2022-01-13 09:49:52.682  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"济南-苏州","idNumber":"130102199006123430","numberList":"2G3420","realname":"巧萦心","startAndEnd_City":["济南","苏州"]}
+2022-01-13 09:49:52.929  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"济南-苏州","idNumber":"130102199006125911","numberList":"1A3421","realname":"甲晓夏","startAndEnd_City":["济南","苏州"]}
+2022-01-13 09:49:53.219  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"济南-苏州","idNumber":"130102199006127810","numberList":"2G3422","realname":"仵倩美","startAndEnd_City":["济南","苏州"]}
+2022-01-13 09:49:53.461  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"亳州-苏州","idNumber":"130102199006127159","numberList":"2G3423","realname":"琴沛","startAndEnd_City":["亳州","苏州"]}
+2022-01-13 09:49:53.718  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"亳州-苏州","idNumber":"130102199006129314","numberList":"2G424","realname":"桥靖","startAndEnd_City":["亳州","苏州"]}
+2022-01-13 09:49:53.956  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"亳州-苏州","idNumber":"130102199006122673","numberList":"1A3425","realname":"国茂才","startAndEnd_City":["亳州","苏州"]}
+2022-01-13 09:49:54.199  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"亳州-苏州","idNumber":"130102199006125399","numberList":"2G3426","realname":"咎高义","startAndEnd_City":["亳州","苏州"]}
+2022-01-13 09:49:54.439  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"上海-苏州","idNumber":"130102199006127511","numberList":"1A3427","realname":"性白竹","startAndEnd_City":["上海","苏州"]}
+2022-01-13 09:49:54.694  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"上海-苏州","idNumber":"130102199006129197","numberList":"2G3428","realname":"悟坚成","startAndEnd_City":["上海","苏州"]}
+2022-01-13 09:49:54.937  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"上海-苏州","idNumber":"13010219900612947X","numberList":"1A3429","realname":"席大","startAndEnd_City":["上海","苏州"]}
+2022-01-13 09:49:55.178  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"上海-苏州","idNumber":"130102199006125452","numberList":"2G3430","realname":"典若雁","startAndEnd_City":["上海","苏州"]}
+2022-01-13 09:49:55.426  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"合肥-苏州","idNumber":"130102199006129699","numberList":"1A3431","realname":"梁碧玉","startAndEnd_City":["合肥","苏州"]}
+2022-01-13 09:49:55.668  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"合肥-苏州","idNumber":"130102199006122497","numberList":"2G3432","realname":"豆紫雪","startAndEnd_City":["合肥","苏州"]}
+2022-01-13 09:49:55.908  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"石家庄-苏州","idNumber":"130102199006122155","numberList":"1A3433","realname":"伟琇","startAndEnd_City":["石家庄","苏州"]}
+2022-01-13 09:49:56.147  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"石家庄-苏州","idNumber":"130102199006126033","numberList":"2G3434","realname":"謇霞姝","startAndEnd_City":["石家庄","苏州"]}
+2022-01-13 09:49:56.388  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"石家庄-苏州","idNumber":"130102199006120256","numberList":"2G3435","realname":"柯逸","startAndEnd_City":["石家庄","苏州"]}
+2022-01-13 09:49:56.705  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"合肥-杭州","idNumber":"130102199006129576","numberList":"1A3436","realname":"青飞燕","startAndEnd_City":["合肥","杭州"]}
+2022-01-13 09:49:56.942  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"镇江-杭州","idNumber":"130102199006126893","numberList":"2G3437","realname":"表琛丽","startAndEnd_City":["镇江","杭州"]}
+2022-01-13 09:49:57.190  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"镇江-杭州","idNumber":"130102199006123350","numberList":"1A3438","realname":"巢青旋","startAndEnd_City":["镇江","杭州"]}
+2022-01-13 09:49:57.431  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"济南-杭州","idNumber":"130102199006126754","numberList":"2G3439","realname":"贡欣悦","startAndEnd_City":["济南","杭州"]}
+2022-01-13 09:49:57.685  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"济南-杭州","idNumber":"13010219900612365X","numberList":"1A3440","realname":"己曲文","startAndEnd_City":["济南","杭州"]}
+2022-01-13 09:49:57.925  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"济南-杭州","idNumber":"130102199006127597","numberList":"2G3441","realname":"力咸英","startAndEnd_City":["济南","杭州"]}
+2022-01-13 09:49:58.176  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"烟台-杭州","idNumber":"130102199006120651","numberList":"1A3442","realname":"潮香卉","startAndEnd_City":["烟台","杭州"]}
+2022-01-13 09:49:58.413  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"烟台-杭州","idNumber":"130102199006121494","numberList":"2G3443","realname":"佟佳霈","startAndEnd_City":["烟台","杭州"]}
+2022-01-13 09:49:58.652  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"烟台-杭州","idNumber":"130102199006123270","numberList":"1A3444","realname":"德紫萍","startAndEnd_City":["烟台","杭州"]}
+2022-01-13 09:49:58.890  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"镇江-杭州","idNumber":"130102199006128610","numberList":"2G3445","realname":"太叔含烟","startAndEnd_City":["镇江","杭州"]}
+2022-01-13 09:49:59.136  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"镇江-杭州","idNumber":"130102199006121611","numberList":"1A3446","realname":"随玲然","startAndEnd_City":["镇江","杭州"]}
+2022-01-13 09:49:59.393  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"南京-杭州","idNumber":"13010219900612461X","numberList":"2G3447","realname":"明弘","startAndEnd_City":["南京","杭州"]}
+2022-01-13 09:49:59.633  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"无锡-杭州","idNumber":"130102199006122032","numberList":"2G3448","realname":"幸芮佳","startAndEnd_City":["无锡","杭州"]}
+2022-01-13 09:49:59.875  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"无锡-杭州","idNumber":"130102199006127538","numberList":"1A3449","realname":"元荷珠","startAndEnd_City":["无锡","杭州"]}
+2022-01-13 09:50:00.117  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"无锡-杭州","idNumber":"130102199006122438","numberList":"1A3450","realname":"之婷美","startAndEnd_City":["无锡","杭州"]}
+2022-01-13 09:50:00.362  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"南京-杭州","idNumber":"130102199006129170","numberList":"1A3451","realname":"所丹云","startAndEnd_City":["南京","杭州"]}
+2022-01-13 09:50:00.599  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"南京-杭州","idNumber":"130102199006126834","numberList":"2G3452","realname":"缑锐","startAndEnd_City":["南京","杭州"]}
+2022-01-13 09:50:00.846  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"南京-杭州","idNumber":"13010219900612509X","numberList":"2G3453","realname":"邴芸溪","startAndEnd_City":["南京","杭州"]}
+2022-01-13 09:50:01.099  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"上海-杭州","idNumber":"130102199006124572","numberList":"2G3454","realname":"官丹蝶","startAndEnd_City":["上海","杭州"]}
+2022-01-13 09:50:01.343  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"上海-杭州","idNumber":"13010219900612437X","numberList":"2G3455","realname":"邛安柏","startAndEnd_City":["上海","杭州"]}
+2022-01-13 09:50:01.580  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"上海-杭州","idNumber":"13010219900612429X","numberList":"1A3456","realname":"始明洁","startAndEnd_City":["上海","杭州"]}
+2022-01-13 09:50:01.832  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"晋城-杭州","idNumber":"130102199006124054","numberList":"1A3457","realname":"行易","startAndEnd_City":["晋城","杭州"]}
+2022-01-13 09:50:02.071  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"晋城-杭州","idNumber":"130102199006129816","numberList":"1A3458","realname":"扶斯雅","startAndEnd_City":["晋城","杭州"]}
+2022-01-13 09:50:02.320  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"晋城-杭州","idNumber":"130102199006123991","numberList":"2G3459","realname":"刘姗姗","startAndEnd_City":["晋城","杭州"]}
+2022-01-13 09:50:02.564  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"晋城-杭州","idNumber":"130102199006126551","numberList":"1A3460","realname":"歧思雨","startAndEnd_City":["晋城","杭州"]}
+2022-01-13 09:50:02.812  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"石家庄-杭州","idNumber":"13010219900612197X","numberList":"2G3461","realname":"敛菀","startAndEnd_City":["石家庄","杭州"]}
+2022-01-13 09:50:03.060  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"石家庄-杭州","idNumber":"130102199006125356","numberList":"2G3462","realname":"段干盼香","startAndEnd_City":["石家庄","杭州"]}
+2022-01-13 09:50:03.319  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"石家庄-杭州","idNumber":"130102199006122673","numberList":"2G3463","realname":"礼晴岚","startAndEnd_City":["石家庄","杭州"]}
+2022-01-13 09:50:03.562  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"烟台-杭州","idNumber":"130102199006122219","numberList":"2G3464","realname":"漆雕婉容","startAndEnd_City":["烟台","杭州"]}
+2022-01-13 09:50:03.802  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"烟台-杭州","idNumber":"130102199006121371","numberList":"2G3465","realname":"蔡春竹","startAndEnd_City":["烟台","杭州"]}
+2022-01-13 09:50:04.041  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"烟台-杭州","idNumber":"130102199006122913","numberList":"1A3466","realname":"门惠君","startAndEnd_City":["烟台","杭州"]}
+2022-01-13 09:50:04.281  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"北京-杭州","idNumber":"130102199006121793","numberList":"2G3467","realname":"子车永嘉","startAndEnd_City":["北京","杭州"]}
+2022-01-13 09:50:04.522  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"北京-杭州","idNumber":"130102199006128258","numberList":"1A3468","realname":"容白易","startAndEnd_City":["北京","杭州"]}
+2022-01-13 09:50:04.764  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"北京-杭州","idNumber":"130102199006126252","numberList":"2G3469","realname":"赏梓珊","startAndEnd_City":["北京","杭州"]}
+2022-01-13 09:50:05.010  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"深圳-杭州","idNumber":"130102199006128530","numberList":"2G3470","realname":"招丹南","startAndEnd_City":["深圳","杭州"]}
+2022-01-13 09:50:05.256  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"深圳-杭州","idNumber":"130102199006121910","numberList":"2G3471","realname":"乙晗","startAndEnd_City":["深圳","杭州"]}
+2022-01-13 09:50:05.504  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 解析到一条数据:{"cityList":"拉萨-深圳","idNumber":"890102199006121910","numberList":"2G3473","realname":"邓弗","startAndEnd_City":["拉萨","深圳"]}
+2022-01-13 09:50:05.747  INFO 12732 --- [http-nio-20003-exec-2] c.y.admin.listener.BorderDataListener    : 所有数据解析完成！
+2022-01-13 09:52:52.978  INFO 12732 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-13 09:57:52.982  INFO 12732 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

@@ -8,6 +8,7 @@ import com.yang.admin.PerInfoServiceImpl;
 import com.yang.admin.mapper.PatientsMapper;
 import com.yang.admin.mapper.PatientstatusMapper;
 import com.yang.admin.mapper.PlaceMapper;
+import com.yang.enums.LocalOrOver;
 import com.yang.pojo.PlaceLocation;
 import com.yang.pojo.VO.Community;
 import com.yang.pojo.VO.Patients;
@@ -183,6 +184,7 @@ public class PatientsDataListener extends AnalysisEventListener<Patients> {
                 patientstatus.setIdNumber(data.getIdNumber());
                 patientstatus.setProvince(getProvince(data.getPlace()));
                 patientstatus.setHealth(data.getHealth());
+                patientstatus.setPatientType(LocalOrOver.Local.type);
                 int insert = patientstatusMapper.insert(patientstatus);
                 if(insert>0) LOGGER.info("患者状态表更新成功,更新数据为{}",patientstatus);
             }

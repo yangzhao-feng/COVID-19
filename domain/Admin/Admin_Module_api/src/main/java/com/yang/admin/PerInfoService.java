@@ -101,7 +101,7 @@ public interface PerInfoService {
     public List<CityData> getAllCityData();
 
     /**
-     * 以省份单位获取各个身份为确诊人数,死亡人数,治愈人数
+     * 以省份单位获取各个身份为确诊人数,死亡人数,治愈人数,带参
      * @return
      */
     public List<CityData> getCityDataByHealth(Integer healthCode);
@@ -111,6 +111,12 @@ public interface PerInfoService {
      * @return
      */
     public int getAllconfirm();
+
+    /**
+     * 获取境外的确诊、治愈、死亡数量
+     * @return
+     */
+    public OverSeaInfoBO getAllOverSeaInfo();
 
 
 

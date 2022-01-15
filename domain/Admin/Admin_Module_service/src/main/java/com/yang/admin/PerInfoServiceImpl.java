@@ -6,6 +6,7 @@ import com.yang.admin.listener.PatientsDataListener;
 import com.yang.admin.mapper.*;
 import com.yang.enums.CommunityCode;
 import com.yang.enums.HealthCode;
+import com.yang.enums.LocalOrOver;
 import com.yang.pojo.BO.*;
 import com.yang.pojo.TimeCompareBO;
 import com.yang.pojo.VO.Community;
@@ -590,6 +591,29 @@ public class PerInfoServiceImpl extends BaseService implements PerInfoService {
         map.put("healthCode",HealthCode.Confirmed.type);
         int allConfirm = patientsMapperCumstom.getAllConfirm(map);
         return allConfirm;
+    }
+
+    @Override
+    public OverSeaInfoBO getAllOverSeaInfo() {
+
+        Example patientStatus = new Example(Patientstatus.class);
+        Example.Criteria criteria = patientStatus.createCriteria();
+        criteria.andEqualTo("patientType", LocalOrOver.OVER_SEA.type);
+        OverSeaInfoBO overSeaInfoBO = new OverSeaInfoBO();
+        List<Patientstatus> patientstatusList = patientstatusMapper.selectByExample(patientStatus);
+        patientstatusList.forEach(status->{
+            if(status.getHealth().equals(HealthCode.Confirmed.type))
+            {
+                overSeaInfoBO.autoAddConfirm();
+            }else if(status.getHealth().equals(HealthCode.CURE.type))
+            {
+                overSeaInfoBO.autoAddCure();
+            }else if(status.getHealth().equals(HealthCode.Death.type))
+            {
+                overSeaInfoBO.autoAddDeath();
+            }
+        });
+        return overSeaInfoBO;
     }
 
 

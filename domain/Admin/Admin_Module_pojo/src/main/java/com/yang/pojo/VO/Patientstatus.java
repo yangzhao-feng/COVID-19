@@ -15,15 +15,6 @@ public class Patientstatus {
 
     private Integer health;
 
-    public String getPatientType() {
-        return patientType;
-    }
-
-    public void setPatientType(String patientType) {
-        this.patientType = patientType;
-    }
-
-    private String patientType;
 
     /**
      * @return id

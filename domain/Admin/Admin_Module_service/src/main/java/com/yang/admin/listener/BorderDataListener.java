@@ -4,15 +4,13 @@ import com.alibaba.excel.context.AnalysisContext;
 import com.alibaba.excel.event.AnalysisEventListener;
 import com.yang.admin.BaseService;
 import com.yang.admin.mapper.BorderpatientsMapper;
+import com.yang.admin.mapper.BorderpatientstatusMapper;
 import com.yang.admin.mapper.PatientstatusMapper;
 import com.yang.admin.mapper.PlaceMapper;
 import com.yang.enums.HealthCode;
 import com.yang.enums.LocalOrOver;
 import com.yang.pojo.PlaceLocation;
-import com.yang.pojo.VO.Borderpatients;
-import com.yang.pojo.VO.Patients;
-import com.yang.pojo.VO.Patientstatus;
-import com.yang.pojo.VO.Placelocation;
+import com.yang.pojo.VO.*;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.math.NumberUtils;
 import org.apache.commons.lang3.text.StrTokenizer;
@@ -34,7 +32,7 @@ public class BorderDataListener extends AnalysisEventListener<Borderpatients> {
 
     private PlaceMapper placeMapper;
 
-    private PatientstatusMapper patientstatusMapper;
+    private BorderpatientstatusMapper borderpatientstatusMapper;
 
     public static Integer dataNum = 0;
 
@@ -57,10 +55,10 @@ public class BorderDataListener extends AnalysisEventListener<Borderpatients> {
     }
 
     public BorderDataListener(BorderpatientsMapper borderpatientsMapper
-            , PlaceMapper placeMapper,PatientstatusMapper patientstatusMapper) {
+            , PlaceMapper placeMapper, BorderpatientstatusMapper borderpatientstatusMapper) {
         this.borderpatientsMapper = borderpatientsMapper;
         this.placeMapper = placeMapper;
-        this.patientstatusMapper = patientstatusMapper;
+        this.borderpatientstatusMapper = borderpatientstatusMapper;
     }
 
     /**
@@ -126,24 +124,24 @@ public class BorderDataListener extends AnalysisEventListener<Borderpatients> {
         borderpatientsMapper.insert(data);
 
         //插入患者状态表
-        Patientstatus patientstatus = new Patientstatus();
+        Borderpatientstatus borderpatientstatus = new Borderpatientstatus();
         List<String> startAndEnd_city = data.getStartAndEnd_City();
-        patientstatus.setProvince(startAndEnd_city.get(2));
-        patientstatus.setIdNumber(data.getIdNumber());
+        borderpatientstatus.setCity(startAndEnd_city.get(1));
+        borderpatientstatus.setIdnumber(data.getIdNumber());
         //默认确诊
-        patientstatus.setHealth(HealthCode.Confirmed.type);
-        patientstatus.setPatientType(LocalOrOver.OVER_SEA.value);
+        borderpatientstatus.setHealth(HealthCode.Confirmed.type);
         //查询状态表中是否有该患者的信息
         Example statusExample = new Example(Patientstatus.class);
         Example.Criteria statusCriteris = statusExample.createCriteria();
-        statusCriteris.andEqualTo("idNumber",patientstatus.getIdNumber());
-        Patientstatus patientstatus1 = patientstatusMapper.selectOneByExample(statusExample);
-        if(patientstatus1!=null)
+        statusCriteris.andEqualTo("idNumber",borderpatientstatus.getIdnumber());
+        Borderpatientstatus borderpatientstatus1 = borderpatientstatusMapper.selectOneByExample(statusExample);
+        if(borderpatientstatus1!=null)
         {
             //覆盖信息
-            patientstatusMapper.updateByExampleSelective(patientstatus,patientstatus1);
+            borderpatientstatus.setId(borderpatientstatus1.getId());
+            borderpatientstatusMapper.updateByPrimaryKeySelective(borderpatientstatus);
         }else {
-            patientstatusMapper.insert(patientstatus);
+            borderpatientstatusMapper.insert(borderpatientstatus);
         }
 
         dataNum++;

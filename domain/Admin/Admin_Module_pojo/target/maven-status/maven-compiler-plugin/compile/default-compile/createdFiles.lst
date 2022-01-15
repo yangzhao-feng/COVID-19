@@ -4,7 +4,9 @@ com\yang\pojo\BO\CommunityBO.class
 com\yang\pojo\BO\CommunityBO2.class
 com\yang\pojo\VO\Placelocation.class
 com\yang\pojo\BO\BorderpatientsBO.class
+com\yang\pojo\BO\OverSeaInfoBO.class
 com\yang\pojo\BO\PatientsBO.class
+com\yang\pojo\VO\Borderpatientstatus.class
 com\yang\pojo\VO\Patientstatus.class
 com\yang\pojo\VO\Community.class
 com\yang\pojo\BO\BorderInfoBO.class

@@ -4,7 +4,8 @@ import javax.persistence.Column;
 import javax.persistence.Id;
 import java.util.Date;
 
-public class Patients {
+public class
+Patients {
 
     private String realname;
 

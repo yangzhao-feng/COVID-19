@@ -32,7 +32,7 @@ public interface CommunityService {
     public List<CommunityBO> getComInfoByAdd(String address);
 
     /**
-     *
+     *通过市级地区获取风险小区信息,version-2
      * @param address
      * @return
      */

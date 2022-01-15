@@ -4,6 +4,7 @@ import com.yang.admin.PerInfoService;
 import com.yang.pojo.BO.CityData;
 import com.yang.pojo.BO.HomeInfoBO;
 import com.yang.pojo.BO.MonthDataBO;
+import com.yang.pojo.BO.OverSeaInfoBO;
 import com.yang.pojo.IMOOCJSONResult;
 import io.lettuce.core.dynamic.annotation.Param;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -60,6 +61,14 @@ public class BaseInfoController {
     {
         int allconfirm = perInfoService.getAllconfirm();
         return IMOOCJSONResult.ok(allconfirm);
+    }
+
+    //TODO 接口待测试
+    @GetMapping("/AllOverSeaInfoNumber")
+    public IMOOCJSONResult getAllOverSeaInfoNumber()
+    {
+        OverSeaInfoBO allOverSeaInfo = perInfoService.getAllOverSeaInfo();
+        return IMOOCJSONResult.ok(allOverSeaInfo);
     }
 
 }

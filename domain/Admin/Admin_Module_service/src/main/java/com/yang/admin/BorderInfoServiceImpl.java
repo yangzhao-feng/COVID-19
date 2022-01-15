@@ -3,6 +3,7 @@ package com.yang.admin;
 import com.alibaba.excel.EasyExcel;
 import com.yang.admin.listener.BorderDataListener;
 import com.yang.admin.mapper.BorderpatientsMapper;
+import com.yang.admin.mapper.BorderpatientstatusMapper;
 import com.yang.admin.mapper.PatientstatusMapper;
 import com.yang.admin.mapper.PlaceMapper;
 import com.yang.enums.CityRiskEnum;
@@ -35,14 +36,14 @@ public class BorderInfoServiceImpl extends BaseService implements BorderInfoServ
     private PlaceMapper placeMapper;
 
     @Autowired
-    private PatientstatusMapper patientstatusMapper;
+    private BorderpatientstatusMapper borderpatientstatusMapper;
 
 
     @Transactional(propagation = Propagation.REQUIRED)
     @Override
     public boolean uploadByExcel(MultipartFile file) {
         try {
-            EasyExcel.read(file.getInputStream(), Borderpatients.class, new BorderDataListener(borderpatientsMapper, placeMapper,patientstatusMapper)).sheet().doRead();
+            EasyExcel.read(file.getInputStream(), Borderpatients.class, new BorderDataListener(borderpatientsMapper, placeMapper,borderpatientstatusMapper)).sheet().doRead();
         }catch (Exception e){
             e.printStackTrace();
             return false;

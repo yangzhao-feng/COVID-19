@@ -40,7 +40,7 @@ public class UserInfoController {
      * @param file
      * @return
      */
-    @PostMapping(value = "/upload")
+    @PostMapping(value = "/uploadByExcel")
     public IMOOCJSONResult upload(@RequestPart("file") MultipartFile file) {
 
         try {
